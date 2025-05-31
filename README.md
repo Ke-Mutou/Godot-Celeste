@@ -5,6 +5,7 @@
 - 狼跳
 - 边缘修正
 - Super Dash、 Hyper Dash、Wavs Dash、Ultra
+- 体力机制
 - 蹭墙跳
 - 墙壁吸附
 - 预输入
