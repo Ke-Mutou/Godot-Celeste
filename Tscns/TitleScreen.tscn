@@ -1,0 +1,295 @@
+[gd_scene load_steps=19 format=3 uid="uid://coe882n5dppjm"]
+
+[ext_resource type="Script" uid="uid://crxneapfpxk7b" path="res://Scripts/UI/TitleScreen.cs" id="1_xwh4c"]
+[ext_resource type="PackedScene" uid="uid://d3pkuw5d5blqd" path="res://Tscns/Temp/Overlay.tscn" id="2_gihah"]
+[ext_resource type="Shader" uid="uid://dnsihs0gffrqj" path="res://Materials/UI/Reflection.gdshader" id="3_bpneg"]
+[ext_resource type="PackedScene" uid="uid://bd80frm8l8g17" path="res://Tscns/Temp/Logo.tscn" id="3_r57bv"]
+[ext_resource type="Texture2D" uid="uid://br5wv4i3o5qyu" path="res://Assets/Loading/snow.png" id="4_r57bv"]
+[ext_resource type="Texture2D" uid="uid://cw0tm6ghj58l" path="res://Assets/UI/Snipaste_2025-03-17_14-32-59.png" id="5_gihah"]
+[ext_resource type="Texture2D" uid="uid://bvpj5pgo4qtte" path="res://Assets/UI/KeyBoard/K.png" id="5_kp362"]
+
+[sub_resource type="Animation" id="Animation_r57bv"]
+resource_name = "Enter"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("./Tip:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(296, 200), Vector2(296, 160)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Logo:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0.3, 0.3), Vector2(1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Logo:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(112, 56), Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Logo:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.211765), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_gihah"]
+resource_name = "Exit"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("./Tip:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(296, 160), Vector2(296, 200)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Logo:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(0.3, 0.3)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Logo:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(112, 56)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Logo:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0.211765)]
+}
+
+[sub_resource type="Animation" id="Animation_bpneg"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("./Tip:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(296, 160)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("./Logo:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("./Logo:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("./Logo:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Logo:scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Logo:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(112, 56)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Logo:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Logo/Reflection:material:shader_parameter/tint_color")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.215686)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_gihah"]
+_data = {
+&"Enter": SubResource("Animation_r57bv"),
+&"Exit": SubResource("Animation_gihah"),
+&"RESET": SubResource("Animation_bpneg")
+}
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_xwh4c"]
+blend_mode = 2
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_bpneg"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_bpneg"]
+shader = ExtResource("3_bpneg")
+shader_parameter/y_scale = 1.0
+shader_parameter/noise_tex = SubResource("NoiseTexture2D_bpneg")
+shader_parameter/speed = 0.25
+shader_parameter/strength = 0.0125
+shader_parameter/tint_color = Color(1, 1, 1, 0.215686)
+shader_parameter/blur_radius = 0.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r57bv"]
+atlas = ExtResource("5_gihah")
+region = Rect2(-0.167023, 0.333656, 419.333, 84)
+
+[sub_resource type="Gradient" id="Gradient_kp362"]
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0.678431)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_msw65"]
+gradient = SubResource("Gradient_kp362")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_kiudy"]
+particle_flag_disable_z = true
+emission_shape = 3
+emission_box_extents = Vector3(1, 90, 1)
+gravity = Vector3(-300, 0, 0)
+linear_accel_min = -40.4
+linear_accel_max = 90.0
+scale_min = 0.01
+scale_max = 0.03
+color_ramp = SubResource("GradientTexture1D_msw65")
+turbulence_enabled = true
+turbulence_noise_strength = 1.47
+turbulence_noise_scale = 8.505
+
+[node name="TitleScreen" type="Node2D"]
+script = ExtResource("1_xwh4c")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_gihah")
+}
+autoplay = "Enter"
+
+[node name="Overlay" parent="." instance=ExtResource("2_gihah")]
+material = SubResource("CanvasItemMaterial_xwh4c")
+
+[node name="Logo" type="Node2D" parent="."]
+position = Vector2(112, 56)
+
+[node name="Logo" parent="Logo" instance=ExtResource("3_r57bv")]
+position = Vector2(160, 96)
+
+[node name="Reflection" parent="Logo" instance=ExtResource("3_r57bv")]
+material = SubResource("ShaderMaterial_bpneg")
+position = Vector2(161, 175)
+scale = Vector2(0.42, 0.42)
+texture = SubResource("AtlasTexture_r57bv")
+
+[node name="Tip" type="Sprite2D" parent="." groups=["Tips"]]
+position = Vector2(296, 160)
+scale = Vector2(0.17, 0.17)
+texture = ExtResource("5_kp362")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+position = Vector2(328, 88)
+amount = 70
+texture = ExtResource("4_r57bv")
+lifetime = 10.0
+preprocess = 3.0
+fixed_fps = 60
+process_material = SubResource("ParticleProcessMaterial_kiudy")

@@ -1,0 +1,96 @@
+[gd_scene load_steps=8 format=3 uid="uid://dc71e2143y57x"]
+
+[ext_resource type="Shader" uid="uid://w04480153pmj" path="res://Materials/Entrance.gdshader" id="1_qac4q"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_var0u"]
+shader = ExtResource("1_qac4q")
+shader_parameter/radius = 10.0
+shader_parameter/center_pos = Vector2(20, 90)
+shader_parameter/window_size = Vector2(320, 180)
+
+[sub_resource type="Animation" id="Animation_n83ow"]
+resource_name = "Entrance"
+length = 1.1
+step = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:material:shader_parameter/radius")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4, 1.1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [14.0, 14.0, 400.0]
+}
+
+[sub_resource type="Animation" id="Animation_sejvo"]
+resource_name = "Idle"
+length = 1.1
+step = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:material:shader_parameter/radius")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_qac4q"]
+resource_name = "Idle1"
+length = 1.1
+step = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:material:shader_parameter/radius")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4, 1.1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [14.0, 14.0, 400.0]
+}
+
+[sub_resource type="Animation" id="Animation_hup5r"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:material:shader_parameter/radius")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [10.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hup5r"]
+_data = {
+&"Entrance": SubResource("Animation_n83ow"),
+&"Idle": SubResource("Animation_sejvo"),
+&"Idle1": SubResource("Animation_qac4q"),
+&"RESET": SubResource("Animation_hup5r")
+}
+
+[node name="Entrance" type="ColorRect"]
+material = SubResource("ShaderMaterial_var0u")
+custom_minimum_size = Vector2(320, 180)
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0, 0, 0, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_hup5r")
+}
+autoplay = "Idle"

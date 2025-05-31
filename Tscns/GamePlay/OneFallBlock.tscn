@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=4 uid="uid://b6kayvtgkcbyj"]
+
+[ext_resource type="PackedScene" uid="uid://dwm8usw1q1vc6" path="res://Tscns/GamePlay/FallBlock.tscn" id="1_xrvxp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xrvxp"]
+size = Vector2(6, 54)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_31bhf"]
+size = Vector2(0.5, 54)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q88fd"]
+size = Vector2(0.5, 54)
+
+[node name="FallBlock" instance=ExtResource("1_xrvxp")]
+gravity_scale = 0.7
+
+[node name="TileMapLayer" parent="." index="0"]
+tile_map_data = PackedByteArray("AAAAAAAAAAABAAAAAAAAAAEAAAACAAUAAAAAAAIAAAAAAAUAAAAAAAMAAAADAAUAAAAAAAQAAAADAAUAAAAAAAUAAAABAAUAAAAAAAYAAAACAAUAAAA=")
+occlusion_enabled = false
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(4, 28)
+shape = SubResource("RectangleShape2D_xrvxp")
+
+[node name="CollisionShape2D" parent="TopArea" index="0"]
+position = Vector2(4, 0)
+
+[node name="CollisionShape2D" parent="BesideArea" index="0"]
+position = Vector2(0, 28)
+shape = SubResource("RectangleShape2D_31bhf")
+
+[node name="CollisionShape2D2" parent="BesideArea" index="1"]
+position = Vector2(8, 28)
+shape = SubResource("RectangleShape2D_q88fd")

@@ -1,0 +1,108 @@
+[gd_scene load_steps=23 format=3 uid="uid://dybfc07u8oau8"]
+
+[ext_resource type="Script" uid="uid://bit1cct5k0sqx" path="res://Scripts/Managers/SoundManager.cs" id="1_sjhgg"]
+[ext_resource type="AudioStream" uid="uid://dnrsvw23fmbot" path="res://Assets/Sounds/Player/Jump/char_mad_jump.ogg" id="2_gtyyw"]
+[ext_resource type="AudioStream" uid="uid://b4g70x3rhdg8a" path="res://Assets/Sounds/Player/Land/char_mad_land_00_snowsoft_01.ogg" id="3_mnknf"]
+[ext_resource type="AudioStream" uid="uid://bxesp1l2p7uj" path="res://Assets/Sounds/Player/WallJump/char_mad_jump_wall_left.ogg" id="4_0vl8g"]
+[ext_resource type="AudioStream" uid="uid://buqo0b5b65oge" path="res://Assets/Sounds/Player/WallJump/char_mad_jump_wall_right.ogg" id="5_ambq3"]
+[ext_resource type="AudioStream" uid="uid://dktvobqeklrc2" path="res://Assets/Sounds/Player/WallJump/char_mad_jump_superwall.ogg" id="6_uv7hc"]
+[ext_resource type="AudioStream" uid="uid://ciwhgeekwr0ih" path="res://Assets/Sounds/Player/ClimbJump/char_mad_jump_wall_climblayer_left.ogg" id="8_fo702"]
+[ext_resource type="AudioStream" uid="uid://b3j5mnm1s15tt" path="res://Assets/Sounds/Player/ClimbJump/char_mad_jump_wall_climblayer_right.ogg" id="9_1xw0n"]
+[ext_resource type="AudioStream" uid="uid://djgkaknvedax8" path="res://Assets/Sounds/Player/Death/char_mad_death.ogg" id="10_m0s7p"]
+[ext_resource type="AudioStream" uid="uid://elf2l2ebaqrr" path="res://Assets/Sounds/Player/Revive/char_mad_revive.ogg" id="11_is71m"]
+[ext_resource type="AudioStream" uid="uid://cwcgdqjnggucy" path="res://Assets/Sounds/Player/Dash/char_mad_dash_red_left.ogg" id="12_bpne2"]
+[ext_resource type="AudioStream" uid="uid://dw2y2knrcf1wk" path="res://Assets/Sounds/Player/Dash/char_mad_dash_red_right.ogg" id="13_2b01w"]
+[ext_resource type="AudioStream" uid="uid://bgogd7lk50h2u" path="res://Assets/Sounds/UI/ui_main_title_firstinput.ogg" id="14_gtyyw"]
+[ext_resource type="AudioStream" uid="uid://crx5wv61k0as2" path="res://Assets/Sounds/UI/ui_main_button_climb.ogg" id="15_0vl8g"]
+[ext_resource type="AudioStream" uid="uid://bhkn72bjl1rym" path="res://Assets/Sounds/UI/ui_main_button_invalid.ogg" id="16_ambq3"]
+[ext_resource type="AudioStream" uid="uid://cscj4osmv6mpe" path="res://Assets/Sounds/UI/ui_main_button_back.ogg" id="17_ambq3"]
+[ext_resource type="AudioStream" uid="uid://bwtlw42igb3q6" path="res://Assets/Sounds/UI/ui_main_button_select.ogg" id="17_uv7hc"]
+[ext_resource type="AudioStream" uid="uid://djhrsq2vf2ntn" path="res://Assets/Sounds/UI/ui_main_button_toggle_off.ogg" id="18_pa3h8"]
+[ext_resource type="AudioStream" uid="uid://cvfb0360tddtf" path="res://Assets/Sounds/UI/ui_main_button_toggle_on.ogg" id="19_fo702"]
+[ext_resource type="AudioStream" uid="uid://cch8ss8r66qyu" path="res://Assets/Sounds/UI/ui_main_button_lowkey.ogg" id="20_fo702"]
+[ext_resource type="AudioStream" uid="uid://d2cchupobp26y" path="res://Assets/Sounds/UI/ui_game_pause.ogg" id="21_m0s7p"]
+[ext_resource type="AudioStream" uid="uid://c78gm3kvobhlh" path="res://Assets/Sounds/UI/ui_game_unpause.ogg" id="22_is71m"]
+
+[node name="SoundManager" type="Node2D"]
+script = ExtResource("1_sjhgg")
+
+[node name="Music" type="Node2D" parent="."]
+
+[node name="Sounds" type="Node2D" parent="."]
+
+[node name="char_mad_jump" type="AudioStreamPlayer2D" parent="Sounds"]
+stream = ExtResource("2_gtyyw")
+
+[node name="char_mad_land" type="AudioStreamPlayer2D" parent="Sounds"]
+stream = ExtResource("3_mnknf")
+
+[node name="char_mad_jump_wall_left" type="AudioStreamPlayer2D" parent="Sounds"]
+stream = ExtResource("4_0vl8g")
+
+[node name="char_mad_jump_wall_right" type="AudioStreamPlayer2D" parent="Sounds"]
+stream = ExtResource("5_ambq3")
+
+[node name="char_mad_jump_superwall" type="AudioStreamPlayer2D" parent="Sounds"]
+stream = ExtResource("6_uv7hc")
+
+[node name="char_mad_jump_climb_left" type="AudioStreamPlayer2D" parent="Sounds"]
+stream = ExtResource("8_fo702")
+
+[node name="char_mad_jump_climb_right" type="AudioStreamPlayer2D" parent="Sounds"]
+stream = ExtResource("9_1xw0n")
+
+[node name="char_mad_death" type="AudioStreamPlayer2D" parent="Sounds"]
+stream = ExtResource("10_m0s7p")
+
+[node name="char_mad_revive" type="AudioStreamPlayer2D" parent="Sounds"]
+stream = ExtResource("11_is71m")
+
+[node name="char_mad_dash_red_left" type="AudioStreamPlayer2D" parent="Sounds"]
+stream = ExtResource("12_bpne2")
+
+[node name="char_mad_dash_red_right" type="AudioStreamPlayer2D" parent="Sounds"]
+stream = ExtResource("13_2b01w")
+
+[node name="UI" type="Node2D" parent="."]
+
+[node name="ui_main_title_firstinput" type="AudioStreamPlayer2D" parent="UI"]
+stream = ExtResource("14_gtyyw")
+bus = &"Sounds"
+
+[node name="ui_main_button_climb" type="AudioStreamPlayer2D" parent="UI"]
+stream = ExtResource("15_0vl8g")
+bus = &"Sounds"
+
+[node name="ui_main_button_back" type="AudioStreamPlayer2D" parent="UI"]
+stream = ExtResource("17_ambq3")
+bus = &"Sounds"
+
+[node name="ui_main_button_select" type="AudioStreamPlayer2D" parent="UI"]
+stream = ExtResource("17_uv7hc")
+bus = &"Sounds"
+
+[node name="ui_main_button_toggle_off" type="AudioStreamPlayer2D" parent="UI"]
+stream = ExtResource("18_pa3h8")
+bus = &"Sounds"
+
+[node name="ui_main_button_toggle_on" type="AudioStreamPlayer2D" parent="UI"]
+stream = ExtResource("19_fo702")
+bus = &"Sounds"
+
+[node name="ui_main_button_lowkey" type="AudioStreamPlayer2D" parent="UI"]
+stream = ExtResource("20_fo702")
+volume_db = -14.39
+pitch_scale = 0.77
+bus = &"Sounds"
+
+[node name="ui_main_button_invalid" type="AudioStreamPlayer2D" parent="UI"]
+stream = ExtResource("16_ambq3")
+bus = &"Sounds"
+
+[node name="ui_game_pause" type="AudioStreamPlayer2D" parent="UI"]
+stream = ExtResource("21_m0s7p")
+bus = &"Sounds"
+
+[node name="ui_game_unpause" type="AudioStreamPlayer2D" parent="UI"]
+stream = ExtResource("22_is71m")
+bus = &"Sounds"

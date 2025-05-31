@@ -1,0 +1,29 @@
+[gd_resource type="Theme" load_steps=5 format=3 uid="uid://cgdsegdt1nuh6"]
+
+[sub_resource type="FontFile" id="FontFile_m2k2o"]
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/64/0/ascent = 0.0
+cache/0/64/0/descent = 0.0
+cache/0/64/0/underline_position = 0.0
+cache/0/64/0/underline_thickness = 0.0
+cache/0/64/0/scale = 1.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_a4wwo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0ad2y"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jgjoy"]
+
+[resource]
+Button/colors/font_color = Color(0.875, 0.875, 0.875, 1)
+Button/colors/font_focus_color = Color(0.95, 0.95, 0.95, 1)
+Button/constants/line_spacing = 0
+Button/font_sizes/font_size = 64
+Button/fonts/font = SubResource("FontFile_m2k2o")
+Button/styles/focus = SubResource("StyleBoxEmpty_a4wwo")
+Button/styles/hover = SubResource("StyleBoxEmpty_0ad2y")
+Button/styles/normal = SubResource("StyleBoxTexture_jgjoy")

@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://d3pkuw5d5blqd"]
+
+[ext_resource type="Texture2D" uid="uid://dyxkla6l4n8il" path="res://Assets/Loading/overlay.png" id="1_u4nek"]
+[ext_resource type="Texture2D" uid="uid://jw1pmhuu2e5g" path="res://Assets/Loading/vignette.png" id="2_mi1ar"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_bpneg"]
+blend_mode = 3
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_gihah"]
+blend_mode = 2
+
+[node name="Overlay" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.666667)
+material = SubResource("CanvasItemMaterial_bpneg")
+position = Vector2(160, 88)
+scale = Vector2(0.17, 0.17)
+texture = ExtResource("1_u4nek")
+
+[node name="Vignette" type="Sprite2D" parent="."]
+material = SubResource("CanvasItemMaterial_gihah")
+position = Vector2(160, 91.5)
+scale = Vector2(0.166667, 0.171296)
+texture = ExtResource("2_mi1ar")

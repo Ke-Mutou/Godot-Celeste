@@ -1,0 +1,46 @@
+[gd_scene load_steps=8 format=3 uid="uid://djmdsba8uk0by"]
+
+[sub_resource type="Curve" id="Curve_ji1fj"]
+_limits = [-360.0, 360.0, 0.0, 1.0]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.517413, -252.414), 0.0, 0.0, 0, 0, Vector2(0.557214, 222.069), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 4
+
+[sub_resource type="CurveTexture" id="CurveTexture_170dc"]
+curve = SubResource("Curve_ji1fj")
+
+[sub_resource type="Curve" id="Curve_he6yu"]
+_data = [Vector2(0, 0.570881), 0.0, 0.0, 0, 0, Vector2(0.746269, 0.854406), 0.0, 0.0, 0, 0, Vector2(1, 0.517241), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveXYZTexture" id="CurveXYZTexture_ujriv"]
+curve_y = SubResource("Curve_he6yu")
+
+[sub_resource type="Curve" id="Curve_evf0y"]
+_data = [Vector2(0, 0.793103), 0.0, 0.0, 0, 0, Vector2(0.369863, 0.89272), 0.0, 0.0, 0, 0, Vector2(0.534247, 0.417625), 0.0, 0.0, 0, 0, Vector2(0.826484, 0.708812), 0.0, 0.0, 0, 0, Vector2(1, 0.249042), 0.0, 0.0, 0, 0]
+point_count = 5
+
+[sub_resource type="CurveTexture" id="CurveTexture_hbdmy"]
+curve = SubResource("Curve_evf0y")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_bm7ae"]
+lifetime_randomness = 0.02
+particle_flag_disable_z = true
+emission_shape = 3
+emission_box_extents = Vector3(4, 1, 1)
+angle_curve = SubResource("CurveTexture_170dc")
+directional_velocity_min = 1.0
+directional_velocity_max = 1.0
+directional_velocity_curve = SubResource("CurveXYZTexture_ujriv")
+gravity = Vector3(0, -100, 0)
+turbulence_enabled = true
+turbulence_noise_strength = 14.58
+turbulence_noise_scale = 5.666
+turbulence_influence_over_life = SubResource("CurveTexture_hbdmy")
+
+[node name="JumpDust" type="GPUParticles2D"]
+emitting = false
+amount = 20
+lifetime = 0.3
+one_shot = true
+fixed_fps = 60
+process_material = SubResource("ParticleProcessMaterial_bm7ae")

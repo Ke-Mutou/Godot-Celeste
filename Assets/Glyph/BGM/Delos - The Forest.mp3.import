@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cvxf1tbqxqy6i"
+path="res://.godot/imported/Delos - The Forest.mp3-e9cc9497f708a51404c61406fad53765.mp3str"
+
+[deps]
+
+source_file="res://Assets/Glyph/BGM/Delos - The Forest.mp3"
+dest_files=["res://.godot/imported/Delos - The Forest.mp3-e9cc9497f708a51404c61406fad53765.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

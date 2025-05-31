@@ -1,0 +1,58 @@
+[gd_scene load_steps=6 format=3 uid="uid://bbwfbm1lqiu51"]
+
+[ext_resource type="Shader" uid="uid://bnvk1y1ap5sgm" path="res://Materials/DeadTranstion.gdshader" id="1_yjum4"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_k26ew"]
+shader = ExtResource("1_yjum4")
+shader_parameter/window_size = Vector2(320, 180)
+shader_parameter/grid_size = 15.0
+shader_parameter/step = 1
+shader_parameter/offset = -1.0
+
+[sub_resource type="Animation" id="Animation_k26ew"]
+resource_name = "DeathTransitioned"
+length = 1.4
+step = 0.7
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:material:shader_parameter/offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.7, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-1.0, 1.0, -1.0]
+}
+
+[sub_resource type="Animation" id="Animation_dmlsx"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:material:shader_parameter/offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-1.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_cx6wn"]
+_data = {
+&"DeathTransitioned": SubResource("Animation_k26ew"),
+&"RESET": SubResource("Animation_dmlsx")
+}
+
+[node name="DeathTransitioned" type="ColorRect"]
+material = SubResource("ShaderMaterial_k26ew")
+custom_minimum_size = Vector2(320, 180)
+color = Color(0, 0, 0, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_cx6wn")
+}

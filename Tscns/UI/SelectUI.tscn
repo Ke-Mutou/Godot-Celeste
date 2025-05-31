@@ -1,0 +1,116 @@
+[gd_scene load_steps=12 format=3 uid="uid://cs5u6ihcahqod"]
+
+[ext_resource type="Shader" uid="uid://ds8xp8lmvi5ui" path="res://Materials/UI/SelectShake.gdshader" id="1_i7vpx"]
+[ext_resource type="Script" uid="uid://qv8b4eyuh6k8" path="res://Scripts/UI/SelectUI.cs" id="1_yb3fo"]
+[ext_resource type="Texture2D" uid="uid://kyakyvakm02m" path="res://Assets/hover.png" id="3_55yg1"]
+[ext_resource type="Texture2D" uid="uid://w5dlwgboy2pg" path="res://Assets/UI/Select/farewell.png" id="4_23ggx"]
+[ext_resource type="Texture2D" uid="uid://d3y41bb2mkvo7" path="res://Assets/万家灯火/gui/micnight.png" id="4_55yg1"]
+[ext_resource type="Texture2D" uid="uid://drl8lefs71mpo" path="res://Assets/2-Intermediate.png" id="5_55yg1"]
+
+[sub_resource type="Animation" id="Animation_yb3fo"]
+resource_name = "Enter"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(2, 0.5),
+"update": 0,
+"values": [Vector2(0, -58), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_311d7"]
+resource_name = "Exit"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(2, 0.5),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -58)]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.3),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"MainUI"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_d3wsk"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, -58)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_d3wsk"]
+_data = {
+&"Enter": SubResource("Animation_yb3fo"),
+&"Exit": SubResource("Animation_311d7"),
+&"RESET": SubResource("Animation_d3wsk")
+}
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_t0kpv"]
+shader = ExtResource("1_i7vpx")
+shader_parameter/amplitude = 0.3
+shader_parameter/frequency = 5.0
+shader_parameter/speed = 2.0
+
+[node name="SelectUI" type="Node2D"]
+process_mode = 3
+position = Vector2(0, -58)
+script = ExtResource("1_yb3fo")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+deterministic = true
+libraries = {
+&"": SubResource("AnimationLibrary_d3wsk")
+}
+
+[node name="Hover" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_t0kpv")
+position = Vector2(152, 23)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("3_55yg1")
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="万家灯火" type="Sprite2D" parent="Node2D"]
+position = Vector2(152, 18)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("4_55yg1")
+
+[node name="Glyph" type="Sprite2D" parent="Node2D"]
+position = Vector2(190, 18)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("5_55yg1")
+
+[node name="Farewell" type="Sprite2D" parent="Node2D"]
+position = Vector2(228, 18)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("4_23ggx")

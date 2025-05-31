@@ -1,0 +1,535 @@
+[gd_scene load_steps=130 format=3 uid="uid://p30103e0qggs"]
+
+[ext_resource type="Script" uid="uid://67le8bte6x1c" path="res://Scripts/GamePlay/TaiJi.cs" id="1_5m7ic"]
+[ext_resource type="Texture2D" uid="uid://b0v0bxk454xxe" path="res://Assets/万家灯火/decal/taij/taiji_00.png" id="1_gb2vp"]
+[ext_resource type="Texture2D" uid="uid://cqe81opdo0os5" path="res://Assets/万家灯火/decal/taij/taiji_01.png" id="2_gf2rt"]
+[ext_resource type="Texture2D" uid="uid://r2fpie2bf61f" path="res://Assets/万家灯火/decal/taij/taiji_02.png" id="3_5m7ic"]
+[ext_resource type="Texture2D" uid="uid://dke1riyjkcokn" path="res://Assets/万家灯火/decal/taij/taiji_03.png" id="4_skod7"]
+[ext_resource type="Texture2D" uid="uid://boq4dfiemiiib" path="res://Assets/万家灯火/decal/taij/taiji_04.png" id="5_pmn7r"]
+[ext_resource type="Texture2D" uid="uid://ba6ks8cruh1pq" path="res://Assets/万家灯火/decal/taij/taiji_05.png" id="6_cv2p6"]
+[ext_resource type="Texture2D" uid="uid://b8po2h4kjn0mn" path="res://Assets/万家灯火/decal/taij/taiji_06.png" id="7_5tl6e"]
+[ext_resource type="Texture2D" uid="uid://cv1xt2he1i7lq" path="res://Assets/万家灯火/decal/taij/taiji_07.png" id="8_1s3ck"]
+[ext_resource type="Texture2D" uid="uid://h2s1w2h1nij1" path="res://Assets/万家灯火/decal/taij/taiji_08.png" id="9_gc2ro"]
+[ext_resource type="Texture2D" uid="uid://g1401ssmst87" path="res://Assets/万家灯火/decal/taij/taiji_09.png" id="10_p138y"]
+[ext_resource type="Texture2D" uid="uid://dro2mptmuwwx" path="res://Assets/万家灯火/decal/taij/taiji_10.png" id="11_14jdn"]
+[ext_resource type="Texture2D" uid="uid://behbewtkss3ye" path="res://Assets/万家灯火/decal/taij/taiji_11.png" id="12_6n4tc"]
+[ext_resource type="Texture2D" uid="uid://sejkor1xkcl5" path="res://Assets/万家灯火/decal/taij/taiji_12.png" id="13_iygpk"]
+[ext_resource type="Texture2D" uid="uid://bqfo0gqxrn64i" path="res://Assets/万家灯火/decal/taij/taiji_13.png" id="14_mfu27"]
+[ext_resource type="Texture2D" uid="uid://l3pqeqgmk6vv" path="res://Assets/万家灯火/decal/taij/taiji_14.png" id="15_cgsyo"]
+[ext_resource type="Texture2D" uid="uid://batkvxcaro05p" path="res://Assets/万家灯火/decal/taij/taiji_15.png" id="16_47phi"]
+[ext_resource type="Texture2D" uid="uid://qpe2k0i1tvd4" path="res://Assets/万家灯火/decal/taij/taiji_16.png" id="17_y253q"]
+[ext_resource type="Texture2D" uid="uid://cxofmi3wsqvs6" path="res://Assets/万家灯火/decal/taij/taiji_17.png" id="18_sp8od"]
+[ext_resource type="Texture2D" uid="uid://cif165bikc7b1" path="res://Assets/万家灯火/decal/taij/taiji_18.png" id="19_7e4j5"]
+[ext_resource type="Texture2D" uid="uid://ds5vupnaigbl0" path="res://Assets/万家灯火/decal/taij/taiji_19.png" id="20_yto01"]
+[ext_resource type="Texture2D" uid="uid://bd8b8gy6xar1c" path="res://Assets/万家灯火/decal/taij/taiji_20.png" id="21_eughq"]
+[ext_resource type="Texture2D" uid="uid://cf1kdvna3qf3e" path="res://Assets/万家灯火/decal/taij/taiji_21.png" id="22_0w7r3"]
+[ext_resource type="Texture2D" uid="uid://cle658jvvncoc" path="res://Assets/万家灯火/decal/taij/taiji_22.png" id="23_26y8v"]
+[ext_resource type="Texture2D" uid="uid://cih0g4jsqeq60" path="res://Assets/万家灯火/decal/taij/taiji_23.png" id="24_dlewn"]
+[ext_resource type="Texture2D" uid="uid://steuaeng2uw6" path="res://Assets/万家灯火/decal/taij/taiji_24.png" id="25_g0ild"]
+[ext_resource type="Texture2D" uid="uid://cohbiouvlh8c4" path="res://Assets/万家灯火/decal/taij/taiji_25.png" id="26_2ye8h"]
+[ext_resource type="Texture2D" uid="uid://bhjs31llj8154" path="res://Assets/万家灯火/decal/taij/taiji_26.png" id="27_xpfld"]
+[ext_resource type="Texture2D" uid="uid://c0n0fnw81ush8" path="res://Assets/万家灯火/decal/taij/taiji_27.png" id="28_o4crj"]
+[ext_resource type="Texture2D" uid="uid://dfaprpysque85" path="res://Assets/万家灯火/decal/taij/taiji_28.png" id="29_vvlft"]
+[ext_resource type="Texture2D" uid="uid://dy12ovplma8tm" path="res://Assets/万家灯火/decal/taij/taiji_29.png" id="30_781s6"]
+[ext_resource type="Texture2D" uid="uid://bu0o18tasiqwb" path="res://Assets/万家灯火/decal/taij/taiji_30.png" id="31_hc3w4"]
+[ext_resource type="Texture2D" uid="uid://fokwsjinqx4r" path="res://Assets/万家灯火/decal/taij/taiji_31.png" id="32_m1gnp"]
+[ext_resource type="Texture2D" uid="uid://cwt3xlm3j80io" path="res://Assets/万家灯火/decal/taij/taiji_32.png" id="33_bni2n"]
+[ext_resource type="Texture2D" uid="uid://cdy26mqx36vkv" path="res://Assets/万家灯火/decal/taij/taiji_33.png" id="34_tndoo"]
+[ext_resource type="Texture2D" uid="uid://cnlr70kxo7b4g" path="res://Assets/万家灯火/decal/taij/taiji_34.png" id="35_tn6ky"]
+[ext_resource type="Texture2D" uid="uid://5tcrasowi4e8" path="res://Assets/万家灯火/decal/taij/taiji_35.png" id="36_ieyqg"]
+[ext_resource type="Texture2D" uid="uid://dfy4md8kfwapn" path="res://Assets/万家灯火/decal/taij/taiji_36.png" id="37_we3ot"]
+[ext_resource type="Texture2D" uid="uid://cb7osps0cychm" path="res://Assets/万家灯火/decal/taij/taiji_37.png" id="38_6t345"]
+[ext_resource type="Texture2D" uid="uid://bscfbdghpgcu6" path="res://Assets/万家灯火/decal/taij/taiji_38.png" id="39_gu5r7"]
+[ext_resource type="Texture2D" uid="uid://swawm3xbno41" path="res://Assets/万家灯火/decal/taij/taiji_39.png" id="40_230pt"]
+[ext_resource type="Texture2D" uid="uid://bqh3a1o56f4ud" path="res://Assets/万家灯火/decal/taij/taiji_40.png" id="41_m8wk1"]
+[ext_resource type="Texture2D" uid="uid://blbvvyq678bwe" path="res://Assets/万家灯火/decal/taij/taiji_41.png" id="42_au6ho"]
+[ext_resource type="Texture2D" uid="uid://bltdbsikg2aq8" path="res://Assets/万家灯火/decal/taij/taiji_42.png" id="43_5ckxn"]
+[ext_resource type="Texture2D" uid="uid://d3nuk8dohtlg" path="res://Assets/万家灯火/decal/taij/taiji_43.png" id="44_5eprb"]
+[ext_resource type="Texture2D" uid="uid://cex8mgy65fkac" path="res://Assets/万家灯火/decal/taij/taiji_44.png" id="45_7ximk"]
+[ext_resource type="Texture2D" uid="uid://c57q8qs1ww3j" path="res://Assets/万家灯火/decal/taij/taiji_45.png" id="46_tyfpr"]
+[ext_resource type="Texture2D" uid="uid://c8vocjhdv3w0q" path="res://Assets/万家灯火/decal/taij/taiji_46.png" id="47_qbpt2"]
+[ext_resource type="Texture2D" uid="uid://cfx3jmnqml5gb" path="res://Assets/万家灯火/decal/taij/taiji_47.png" id="48_dg8o1"]
+[ext_resource type="Texture2D" uid="uid://dep6vup0jbhg8" path="res://Assets/万家灯火/decal/taij/taiji_48.png" id="49_ppwcn"]
+[ext_resource type="Texture2D" uid="uid://bulerxqo2vfdc" path="res://Assets/万家灯火/decal/taij/taiji_49.png" id="50_g3bfn"]
+[ext_resource type="Texture2D" uid="uid://b6w6mld5myuli" path="res://Assets/万家灯火/decal/taij/taiji_50.png" id="51_1vef5"]
+[ext_resource type="Texture2D" uid="uid://dojqwvl2onhio" path="res://Assets/万家灯火/decal/taij/taiji_51.png" id="52_1ofc5"]
+[ext_resource type="Texture2D" uid="uid://dklqwhmg78ca4" path="res://Assets/万家灯火/decal/taij/taiji_52.png" id="53_r0ade"]
+[ext_resource type="Texture2D" uid="uid://c1ti2grhev5q8" path="res://Assets/万家灯火/decal/taij/taiji_53.png" id="54_06vob"]
+[ext_resource type="Texture2D" uid="uid://dr6xqwmygj6ro" path="res://Assets/万家灯火/decal/taij/taiji_54.png" id="55_7yh01"]
+[ext_resource type="Texture2D" uid="uid://bsnftx3bm1ddt" path="res://Assets/万家灯火/decal/taij/taiji_55.png" id="56_ggeeh"]
+[ext_resource type="Texture2D" uid="uid://cdm5gepfdh2h1" path="res://Assets/万家灯火/decal/taij/taiji_56.png" id="57_pufbe"]
+[ext_resource type="Texture2D" uid="uid://cwu0st6rh3eu7" path="res://Assets/万家灯火/decal/taij/taiji_57.png" id="58_j42oi"]
+[ext_resource type="Texture2D" uid="uid://bk5hh1g1vhff1" path="res://Assets/万家灯火/decal/taij/taiji_58.png" id="59_ockql"]
+[ext_resource type="Texture2D" uid="uid://dfqcd5hvyxutu" path="res://Assets/万家灯火/decal/taij/taiji_59.png" id="60_2lpgd"]
+[ext_resource type="Texture2D" uid="uid://8pet0s7fgn7x" path="res://Assets/万家灯火/decal/taij/taiji_60.png" id="61_1fjad"]
+[ext_resource type="Texture2D" uid="uid://cdvjryg6i8r3a" path="res://Assets/万家灯火/decal/taij/taiji_61.png" id="62_i7j2w"]
+[ext_resource type="Texture2D" uid="uid://dciv82mc88fwo" path="res://Assets/万家灯火/decal/taij/taiji_62.png" id="63_qythx"]
+[ext_resource type="Texture2D" uid="uid://dwltx63ati3i3" path="res://Assets/万家灯火/decal/taij/taiji_63.png" id="64_7br34"]
+[ext_resource type="Texture2D" uid="uid://if4g6yhq0v5p" path="res://Assets/万家灯火/decal/taij/taiji_64.png" id="65_8hcyo"]
+[ext_resource type="Texture2D" uid="uid://b1o5p0e10tngb" path="res://Assets/万家灯火/decal/taij/taiji_65.png" id="66_vj757"]
+[ext_resource type="Texture2D" uid="uid://b8nvpxnup8u8s" path="res://Assets/万家灯火/decal/taij/taiji_66.png" id="67_0wouf"]
+[ext_resource type="Texture2D" uid="uid://dgog8c82miser" path="res://Assets/万家灯火/decal/taij/taiji_67.png" id="68_khf1m"]
+[ext_resource type="Texture2D" uid="uid://btkrtd6jj8sg" path="res://Assets/万家灯火/decal/taij/taiji_68.png" id="69_6u8wy"]
+[ext_resource type="Texture2D" uid="uid://belmigfemr5gr" path="res://Assets/万家灯火/decal/taij/taiji_69.png" id="70_s641k"]
+[ext_resource type="Texture2D" uid="uid://dxargatopi0he" path="res://Assets/万家灯火/decal/taij/taiji_70.png" id="71_bp6ei"]
+[ext_resource type="Texture2D" uid="uid://bdoybphxjlx6k" path="res://Assets/万家灯火/decal/taij/taiji_71.png" id="72_c0bpo"]
+[ext_resource type="Texture2D" uid="uid://dh5yftx7hs7eh" path="res://Assets/万家灯火/decal/taij/taiji_72.png" id="73_0hpen"]
+[ext_resource type="Texture2D" uid="uid://dsoy7hh66vbxb" path="res://Assets/万家灯火/decal/taij/taiji_73.png" id="74_dftc6"]
+[ext_resource type="Texture2D" uid="uid://bl86jha085p3v" path="res://Assets/万家灯火/decal/taij/taiji_74.png" id="75_6800q"]
+[ext_resource type="Texture2D" uid="uid://x3qpl1cxb10i" path="res://Assets/万家灯火/decal/taij/taiji_75.png" id="76_rl7lw"]
+[ext_resource type="Texture2D" uid="uid://bo7h2vpk1fyr1" path="res://Assets/万家灯火/decal/taij/taiji_76.png" id="77_vv4vh"]
+[ext_resource type="Texture2D" uid="uid://10bjve3udlqk" path="res://Assets/万家灯火/decal/taij/taiji_77.png" id="78_vrxm2"]
+[ext_resource type="Texture2D" uid="uid://j0gn2ryqn7ja" path="res://Assets/万家灯火/decal/taij/taiji_78.png" id="79_yrhla"]
+[ext_resource type="Texture2D" uid="uid://b61fmjpc0ykkd" path="res://Assets/万家灯火/decal/taij/taiji_79.png" id="80_bwgub"]
+[ext_resource type="Texture2D" uid="uid://dmdofb7yrer5w" path="res://Assets/万家灯火/decal/taij/taiji_80.png" id="81_1gd3i"]
+[ext_resource type="Texture2D" uid="uid://d6uro1fmc2rs" path="res://Assets/万家灯火/decal/taij/taiji_81.png" id="82_d1sie"]
+[ext_resource type="Texture2D" uid="uid://cv5lkj87cccsy" path="res://Assets/万家灯火/decal/taij/taiji_82.png" id="83_qwjgf"]
+[ext_resource type="Texture2D" uid="uid://dogmgq2brs0o5" path="res://Assets/万家灯火/decal/taij/taiji_83.png" id="84_45gk1"]
+[ext_resource type="Texture2D" uid="uid://cvaxxn3tsoxb5" path="res://Assets/万家灯火/decal/taij/taiji_84.png" id="85_q3a20"]
+[ext_resource type="Texture2D" uid="uid://dpscwljp66eo6" path="res://Assets/万家灯火/decal/taij/taiji_85.png" id="86_2hekl"]
+[ext_resource type="Texture2D" uid="uid://bhbd4mx3glf26" path="res://Assets/万家灯火/decal/taij/taiji_86.png" id="87_8wab2"]
+[ext_resource type="Texture2D" uid="uid://bt1bem8738f3w" path="res://Assets/万家灯火/decal/taij/taiji_87.png" id="88_1gmfq"]
+[ext_resource type="Texture2D" uid="uid://dggassf81g81t" path="res://Assets/万家灯火/decal/taij/taiji_88.png" id="89_fwnoh"]
+[ext_resource type="Texture2D" uid="uid://ctk5u23b5b3r7" path="res://Assets/万家灯火/decal/taij/taiji_89.png" id="90_hkkaq"]
+[ext_resource type="Texture2D" uid="uid://dmuurjfae367l" path="res://Assets/万家灯火/decal/taij/taiji_90.png" id="91_p2nal"]
+[ext_resource type="Texture2D" uid="uid://b2o0gpjnkl655" path="res://Assets/万家灯火/decal/taij/taiji_91.png" id="92_cymfl"]
+[ext_resource type="Texture2D" uid="uid://dvotnsr8tw65f" path="res://Assets/万家灯火/decal/taij/taiji_92.png" id="93_vuui5"]
+[ext_resource type="Texture2D" uid="uid://crjndg4ywqkjq" path="res://Assets/万家灯火/decal/taij/taiji_93.png" id="94_cqpyl"]
+[ext_resource type="Texture2D" uid="uid://cirtdsbpbf6th" path="res://Assets/万家灯火/decal/taij/taiji_94.png" id="95_4dko5"]
+[ext_resource type="Texture2D" uid="uid://wt600qmeo8yl" path="res://Assets/万家灯火/decal/taij/taiji_95.png" id="96_7bahr"]
+[ext_resource type="Texture2D" uid="uid://dsp3kc2j8okqw" path="res://Assets/万家灯火/decal/taij/taiji_96.png" id="97_8ofij"]
+[ext_resource type="Texture2D" uid="uid://bag3dlc75uix1" path="res://Assets/万家灯火/decal/taij/taiji_97.png" id="98_r34ea"]
+[ext_resource type="Texture2D" uid="uid://cga82k134mdsg" path="res://Assets/万家灯火/decal/taij/taiji_98.png" id="99_comny"]
+[ext_resource type="Texture2D" uid="uid://c4he1yyfndkcy" path="res://Assets/万家灯火/decal/taij/taiji_99.png" id="100_bhwda"]
+[ext_resource type="Texture2D" uid="uid://bmo4rh6r4cccg" path="res://Assets/万家灯火/decal/taij/taiji_100.png" id="101_b405b"]
+[ext_resource type="Texture2D" uid="uid://c7xyccdguym0v" path="res://Assets/万家灯火/decal/taij/taiji_101.png" id="102_kjpl4"]
+[ext_resource type="Texture2D" uid="uid://c5tdyq54x4tx3" path="res://Assets/万家灯火/decal/taij/taiji_102.png" id="103_fjfcv"]
+[ext_resource type="Texture2D" uid="uid://3tv5ueof0i1r" path="res://Assets/万家灯火/decal/taij/taiji_103.png" id="104_ypyjn"]
+[ext_resource type="Texture2D" uid="uid://bnb2eb4r873tc" path="res://Assets/万家灯火/decal/taij/taiji_104.png" id="105_va3gc"]
+[ext_resource type="Texture2D" uid="uid://dxflmbbxxv2fg" path="res://Assets/万家灯火/decal/taij/taiji_105.png" id="106_f0r4n"]
+[ext_resource type="Texture2D" uid="uid://c5pm7ix74lsyi" path="res://Assets/万家灯火/decal/taij/taiji_106.png" id="107_67wru"]
+[ext_resource type="Texture2D" uid="uid://d37qk1whuvu0a" path="res://Assets/万家灯火/decal/taij/taiji_107.png" id="108_semyh"]
+[ext_resource type="Texture2D" uid="uid://e5ctkqfayumy" path="res://Assets/万家灯火/decal/taij/taiji_108.png" id="109_cm75n"]
+[ext_resource type="Texture2D" uid="uid://dx0mkofrsh53k" path="res://Assets/万家灯火/decal/taij/taiji_109.png" id="110_5ffi6"]
+[ext_resource type="Texture2D" uid="uid://qvynwo1ulnvq" path="res://Assets/万家灯火/decal/taij/taiji_110.png" id="111_pb4rf"]
+[ext_resource type="Texture2D" uid="uid://34gw6hegmupl" path="res://Assets/万家灯火/decal/taij/taiji_111.png" id="112_npvbv"]
+[ext_resource type="Texture2D" uid="uid://csjc3kb42jmr2" path="res://Assets/万家灯火/decal/taij/taiji_112.png" id="113_o5ddb"]
+[ext_resource type="Texture2D" uid="uid://bte14mb6rni8t" path="res://Assets/万家灯火/decal/taij/taiji_113.png" id="114_85h3q"]
+[ext_resource type="Texture2D" uid="uid://owfellnhstdf" path="res://Assets/万家灯火/decal/taij/taiji_114.png" id="115_502wp"]
+[ext_resource type="Texture2D" uid="uid://cgvfl1meujpp1" path="res://Assets/万家灯火/decal/taij/taiji_115.png" id="116_8fp6b"]
+[ext_resource type="Texture2D" uid="uid://4p011r2f8t8s" path="res://Assets/万家灯火/decal/taij/taiji_116.png" id="117_eecci"]
+[ext_resource type="Texture2D" uid="uid://whqw6iqdphv5" path="res://Assets/万家灯火/decal/taij/taiji_117.png" id="118_jdc0w"]
+[ext_resource type="Texture2D" uid="uid://b3rbc8q4dbmsn" path="res://Assets/万家灯火/decal/taij/taiji_118.png" id="119_1j31t"]
+[ext_resource type="Texture2D" uid="uid://bqfwpyc8dd25b" path="res://Assets/万家灯火/decal/taij/taiji_119.png" id="120_54is2"]
+[ext_resource type="Texture2D" uid="uid://da2v06y3duth0" path="res://Assets/万家灯火/decal/taij/taiji_120.png" id="121_7howl"]
+[ext_resource type="Texture2D" uid="uid://cx2830ckefbkx" path="res://Assets/万家灯火/decal/taij/taiji_121.png" id="122_uyvlx"]
+[ext_resource type="Texture2D" uid="uid://b6k4pi7litcxx" path="res://Assets/万家灯火/decal/taij/taiji_122.png" id="123_bqd4e"]
+[ext_resource type="Texture2D" uid="uid://cq2ysx10q5lih" path="res://Assets/万家灯火/decal/taij/taiji_123.png" id="124_84ytw"]
+[ext_resource type="Texture2D" uid="uid://kxnnd4tk6yjl" path="res://Assets/万家灯火/decal/taij/taiji_124.png" id="125_b2c7q"]
+[ext_resource type="AudioStream" uid="uid://cee2vwt4yjkc7" path="res://Assets/Sounds/GamePlayer/TaiJi/game_10_cafe_computer_startupsfx_[cut_2sec].mp3" id="127_skod7"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7np5j"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_gb2vp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_gf2rt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_5m7ic")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_skod7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_pmn7r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_cv2p6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_5tl6e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_1s3ck")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_gc2ro")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_p138y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_14jdn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_6n4tc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_iygpk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_mfu27")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_cgsyo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_47phi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_y253q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_sp8od")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_7e4j5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_yto01")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_eughq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_0w7r3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_26y8v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_dlewn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_g0ild")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_2ye8h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_xpfld")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_o4crj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_vvlft")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_781s6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_hc3w4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_m1gnp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_bni2n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_tndoo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_tn6ky")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_ieyqg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_we3ot")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_6t345")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_gu5r7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_230pt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_m8wk1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_au6ho")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_5ckxn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_5eprb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_7ximk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_tyfpr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_qbpt2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_dg8o1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_ppwcn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_g3bfn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_1vef5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_1ofc5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_r0ade")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_06vob")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_7yh01")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_ggeeh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_pufbe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_j42oi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_ockql")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_2lpgd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_1fjad")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_i7j2w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_qythx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_7br34")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_8hcyo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_vj757")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_0wouf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_khf1m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_6u8wy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_s641k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_bp6ei")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_c0bpo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_0hpen")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_dftc6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_6800q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_rl7lw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_vv4vh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_vrxm2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_yrhla")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_bwgub")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_1gd3i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_d1sie")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_qwjgf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_45gk1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_q3a20")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_2hekl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_8wab2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_1gmfq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_fwnoh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_hkkaq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_p2nal")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_cymfl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_vuui5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_cqpyl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_4dko5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_7bahr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_8ofij")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_r34ea")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_comny")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_bhwda")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_b405b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_kjpl4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_fjfcv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_ypyjn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_va3gc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("106_f0r4n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("107_67wru")
+}, {
+"duration": 1.0,
+"texture": ExtResource("108_semyh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("109_cm75n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("110_5ffi6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("111_pb4rf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("112_npvbv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("113_o5ddb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("114_85h3q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("115_502wp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("116_8fp6b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("117_eecci")
+}, {
+"duration": 1.0,
+"texture": ExtResource("118_jdc0w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("119_1j31t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("120_54is2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("121_7howl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("122_uyvlx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("123_bqd4e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("124_84ytw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("125_b2c7q")
+}],
+"loop": true,
+"name": &"default",
+"speed": 20.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gb2vp"]
+radius = 52.469
+
+[node name="TaiJi" type="Area2D"]
+script = ExtResource("1_5m7ic")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.15, 0.15)
+sprite_frames = SubResource("SpriteFrames_7np5j")
+autoplay = "default"
+frame_progress = 0.401343
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.15, 0.15)
+shape = SubResource("CircleShape2D_gb2vp")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("127_skod7")
+bus = &"Sounds"
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true

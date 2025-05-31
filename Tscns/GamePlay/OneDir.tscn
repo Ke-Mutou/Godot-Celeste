@@ -1,0 +1,3 @@
+[gd_scene load_steps=0 format=3 uid="uid://bhb5rim5h4gy5"]
+
+[node name="OneDir" type="RigidBody2D"]

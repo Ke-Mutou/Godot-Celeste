@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://t5ssxo7f4j68"]
+
+[ext_resource type="Script" path="res://Scripts/UI/EndScreen.cs" id="1_7jfu0"]
+[ext_resource type="Texture2D" uid="uid://c0e03xsaj2er5" path="res://Assets/EndScreen/micnight.png" id="1_q3y3q"]
+
+[node name="万家灯火" type="CanvasLayer"]
+script = ExtResource("1_7jfu0")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="Control"]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+scale = Vector2(0.167, 0.167)
+texture = ExtResource("1_q3y3q")

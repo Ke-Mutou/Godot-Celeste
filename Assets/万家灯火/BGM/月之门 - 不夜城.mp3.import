@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c0t42ty2yofdc"
+path="res://.godot/imported/月之门 - 不夜城.mp3-7ee250b08070676cf604705ba02168cd.mp3str"
+
+[deps]
+
+source_file="res://Assets/万家灯火/BGM/月之门 - 不夜城.mp3"
+dest_files=["res://.godot/imported/月之门 - 不夜城.mp3-7ee250b08070676cf604705ba02168cd.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

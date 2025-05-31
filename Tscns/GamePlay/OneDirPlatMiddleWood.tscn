@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bl0hgypw25m4q"]
+
+[ext_resource type="PackedScene" uid="uid://sn23glco5851" path="res://Tscns/GamePlay/OneDirPlatMiddle.tscn" id="1_0khsq"]
+[ext_resource type="Texture2D" uid="uid://druw86s0ywkub" path="res://Assets/Picture/GamePlay/OneDirPlat/wood.png" id="2_tvl37"]
+
+[node name="OneDirPlatMiddle" instance=ExtResource("1_0khsq")]
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_tvl37")

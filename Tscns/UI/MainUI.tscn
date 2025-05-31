@@ -1,0 +1,530 @@
+[gd_scene load_steps=25 format=3 uid="uid://mf7lse0jms7j"]
+
+[ext_resource type="Shader" uid="uid://c2qou830doktb" path="res://Materials/UI/OutLine.gdshader" id="1_68r5h"]
+[ext_resource type="Script" uid="uid://cpbju484oq1tg" path="res://Scripts/UI/MainUI.cs" id="1_c47f2"]
+[ext_resource type="Texture2D" uid="uid://bwtgam16wi1w4" path="res://Assets/UI/Menu/start.png" id="1_ywa1b"]
+[ext_resource type="Texture2D" uid="uid://c37vw5bimnjcv" path="res://Assets/UI/Menu/options.png" id="3_forvu"]
+[ext_resource type="Texture2D" uid="uid://bm0q2c5lmnesu" path="res://Assets/UI/Menu/credits.png" id="4_bd0ra"]
+[ext_resource type="Texture2D" uid="uid://cr77v8y7pkhjy" path="res://Assets/UI/Menu/exit.png" id="5_c47f2"]
+[ext_resource type="Texture2D" uid="uid://bvpj5pgo4qtte" path="res://Assets/UI/KeyBoard/K.png" id="7_y5t78"]
+[ext_resource type="Texture2D" uid="uid://djtjuashqs7mh" path="res://Assets/UI/KeyBoard/J.png" id="8_ohbem"]
+
+[sub_resource type="Animation" id="Animation_u5o7c"]
+resource_name = "Climb"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.3, 0.4),
+"transitions": PackedFloat32Array(2, 0.5),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-100, 0)]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.1),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"Climb"
+}]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Control/Setting:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-100, 0), Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Control/Salute:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 20), Vector2(-100, 20), Vector2(0, 20)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Control/Exit:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 40), Vector2(-100, 40), Vector2(0, 40)]
+}
+
+[sub_resource type="Animation" id="Animation_y5t78"]
+resource_name = "Enter"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(70, 0), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Control:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(0.5, 2),
+"update": 0,
+"values": [Vector2(-100, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_0bqne"]
+resource_name = "EnterT"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(0.5, 2),
+"update": 0,
+"values": [Vector2(-100, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_ohbem"]
+resource_name = "Exit"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(70, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Control:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(2, 0.5),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-100, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_1fqg4"]
+resource_name = "ExitT"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(2, 0.5),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-100, 0)]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.1),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"SettingUI"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_mibhj"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(70, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Control:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-100, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Control/Setting:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Control/Salute:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 20)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Control/Exit:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 40)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Control/Climb:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_mibhj"]
+_data = {
+&"Climb": SubResource("Animation_u5o7c"),
+&"Enter": SubResource("Animation_y5t78"),
+&"EnterT": SubResource("Animation_0bqne"),
+&"Exit": SubResource("Animation_ohbem"),
+&"ExitT": SubResource("Animation_1fqg4"),
+&"RESET": SubResource("Animation_mibhj")
+}
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_forvu"]
+shader = ExtResource("1_68r5h")
+shader_parameter/width = 1
+shader_parameter/outline_color = Color(0, 0, 0, 1)
+shader_parameter/flickering_speed = 0.0
+shader_parameter/minimal_flickering_alpha = 0.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_y5t78"]
+font_size = 11
+outline_size = 1
+outline_color = Color(0.0313726, 0.0313726, 0.0313726, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_bd0ra"]
+shader = ExtResource("1_68r5h")
+shader_parameter/width = 0
+shader_parameter/outline_color = Color(0, 0, 0, 1)
+shader_parameter/flickering_speed = 0.0
+shader_parameter/minimal_flickering_alpha = 0.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_ohbem"]
+font_size = 7
+outline_size = 1
+outline_color = Color(0.0295066, 0.0295066, 0.0295066, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_c47f2"]
+shader = ExtResource("1_68r5h")
+shader_parameter/width = 0
+shader_parameter/outline_color = Color(0, 0, 0, 1)
+shader_parameter/flickering_speed = 0.0
+shader_parameter/minimal_flickering_alpha = 0.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_mibhj"]
+font_size = 7
+outline_size = 1
+outline_color = Color(0.0295066, 0.0295066, 0.0295066, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_r3o4k"]
+shader = ExtResource("1_68r5h")
+shader_parameter/width = 0
+shader_parameter/outline_color = Color(0, 0, 0, 1)
+shader_parameter/flickering_speed = 0.0
+shader_parameter/minimal_flickering_alpha = 0.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_0bqne"]
+font_size = 7
+outline_size = 1
+outline_color = Color(0.0295066, 0.0295066, 0.0295066, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ywa1b"]
+font_size = 4
+outline_size = 1
+outline_color = Color(0.0313726, 0.0313726, 0.0313726, 1)
+
+[node name="MainUI" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_c47f2")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+deterministic = true
+libraries = {
+&"": SubResource("AnimationLibrary_mibhj")
+}
+autoplay = "Enter"
+
+[node name="Control" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Climb" type="Control" parent="Control"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+focus_neighbor_top = NodePath("../Exit")
+focus_neighbor_bottom = NodePath("../Setting")
+focus_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Control/Climb"]
+material = SubResource("ShaderMaterial_forvu")
+layout_mode = 0
+offset_left = 30.0
+offset_top = 27.0
+offset_right = 286.0
+offset_bottom = 250.0
+scale = Vector2(0.17, 0.17)
+texture = ExtResource("1_ywa1b")
+
+[node name="Label" type="Label" parent="Control/Climb"]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 61.0
+offset_right = 72.0
+offset_bottom = 84.0
+text = "攀登"
+label_settings = SubResource("LabelSettings_y5t78")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Setting" type="Control" parent="Control"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+focus_neighbor_top = NodePath("../Climb")
+focus_neighbor_bottom = NodePath("../Salute")
+focus_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Control/Setting"]
+material = SubResource("ShaderMaterial_bd0ra")
+layout_mode = 0
+offset_left = 30.0
+offset_top = 83.0
+offset_right = 70.0
+offset_bottom = 123.0
+scale = Vector2(0.27, 0.27)
+texture = ExtResource("3_forvu")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Control/Setting"]
+layout_mode = 0
+offset_left = 44.0
+offset_top = 77.0
+offset_right = 84.0
+offset_bottom = 100.0
+text = "选项"
+label_settings = SubResource("LabelSettings_ohbem")
+vertical_alignment = 1
+
+[node name="Salute" type="Control" parent="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 20.0
+offset_right = 40.0
+offset_bottom = 60.0
+focus_neighbor_top = NodePath("../Setting")
+focus_neighbor_bottom = NodePath("../Exit")
+focus_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Control/Salute"]
+material = SubResource("ShaderMaterial_c47f2")
+layout_mode = 0
+offset_left = 30.0
+offset_top = 83.0
+offset_right = 70.0
+offset_bottom = 123.0
+scale = Vector2(0.27, 0.27)
+texture = ExtResource("4_bd0ra")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Control/Salute"]
+layout_mode = 0
+offset_left = 44.0
+offset_top = 77.0
+offset_right = 84.0
+offset_bottom = 100.0
+text = "致敬"
+label_settings = SubResource("LabelSettings_mibhj")
+vertical_alignment = 1
+
+[node name="Exit" type="Control" parent="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 40.0
+offset_right = 40.0
+offset_bottom = 80.0
+focus_neighbor_top = NodePath("../Salute")
+focus_neighbor_bottom = NodePath("../Climb")
+focus_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Control/Exit"]
+material = SubResource("ShaderMaterial_r3o4k")
+layout_mode = 0
+offset_left = 30.0
+offset_top = 83.0
+offset_right = 70.0
+offset_bottom = 123.0
+scale = Vector2(0.27, 0.27)
+texture = ExtResource("5_c47f2")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Control/Exit"]
+layout_mode = 0
+offset_left = 44.0
+offset_top = 77.0
+offset_right = 84.0
+offset_bottom = 100.0
+text = "退出"
+label_settings = SubResource("LabelSettings_0bqne")
+vertical_alignment = 1
+
+[node name="Control2" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -250.0
+offset_top = -180.0
+offset_right = -210.0
+offset_bottom = -140.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="Confirm" type="Control" parent="Control2"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 266.395
+offset_top = 118.0
+offset_right = 306.395
+offset_bottom = 158.0
+
+[node name="Label" type="Label" parent="Control2/Confirm"]
+layout_mode = 0
+offset_left = -4.0
+offset_top = 42.5
+offset_right = 36.0
+offset_bottom = 65.5
+text = "确认"
+label_settings = SubResource("LabelSettings_ywa1b")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Control2/Confirm" groups=["Tips"]]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 49.5
+offset_right = 277.0
+offset_bottom = 294.5
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("7_y5t78")
+
+[node name="Back" type="Control" parent="Control2"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 286.0
+offset_top = 118.0
+offset_right = 326.0
+offset_bottom = 158.0
+
+[node name="Label" type="Label" parent="Control2/Back"]
+layout_mode = 0
+offset_left = -4.0
+offset_top = 42.5
+offset_right = 36.0
+offset_bottom = 65.5
+text = "返回"
+label_settings = SubResource("LabelSettings_ywa1b")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Control2/Back" groups=["Tips"]]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 49.5
+offset_right = 277.0
+offset_bottom = 294.5
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("8_ohbem")
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

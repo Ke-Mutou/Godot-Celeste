@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://bfou4lritkmdy"]
+
+[sub_resource type="Curve" id="Curve_ndwi8"]
+_limits = [-360.0, 360.0, 0.0, 1.0]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.422886, 150.345), 0.0, 0.0, 0, 0, Vector2(0.472637, -219.31), 0.0, 0.0, 0, 0, Vector2(0.751244, 183.448), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 5
+
+[sub_resource type="CurveTexture" id="CurveTexture_ttiti"]
+curve = SubResource("Curve_ndwi8")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_ndwi8"]
+particle_flag_disable_z = true
+emission_shape = 3
+emission_box_extents = Vector3(5, 1, 1)
+angle_curve = SubResource("CurveTexture_ttiti")
+gravity = Vector3(0, -100, 0)
+turbulence_enabled = true
+turbulence_noise_strength = 14.98
+turbulence_noise_scale = 4.214
+
+[node name="LandDust" type="GPUParticles2D"]
+emitting = false
+amount = 70
+lifetime = 0.3
+one_shot = true
+fixed_fps = 60
+process_material = SubResource("ParticleProcessMaterial_ndwi8")

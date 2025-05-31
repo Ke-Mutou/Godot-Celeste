@@ -1,0 +1,61 @@
+[gd_scene load_steps=5 format=3 uid="uid://0at4ogr1wic1"]
+
+[ext_resource type="Script" uid="uid://csk3cd876q4ht" path="res://Scripts/Effects/Resurrection.cs" id="1_0revr"]
+[ext_resource type="Shader" uid="uid://dwbs2pn5ht3yu" path="res://Materials/Dead.gdshader" id="1_eascy"]
+[ext_resource type="Texture2D" uid="uid://6hb6d50hvx3t" path="res://Assets/Picture/Hair/hair00.png" id="1_xgwfi"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_v0b0i"]
+shader = ExtResource("1_eascy")
+shader_parameter/hit_effect = 0.7
+shader_parameter/flash_speed = 20.0
+shader_parameter/flash_color = Color(0.67451, 0.196078, 0.196078, 1)
+shader_parameter/line_thickness = 2.0
+shader_parameter/line_color = Color(0, 0, 0, 1)
+
+[node name="Resurrection" type="CanvasGroup"]
+material = SubResource("ShaderMaterial_v0b0i")
+script = ExtResource("1_0revr")
+
+[node name="Hair00" type="Sprite2D" parent="."]
+position = Vector2(125, 65)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("1_xgwfi")
+
+[node name="Hair01" type="Sprite2D" parent="."]
+position = Vector2(125, 65)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("1_xgwfi")
+
+[node name="Hair02" type="Sprite2D" parent="."]
+position = Vector2(125, 65)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("1_xgwfi")
+
+[node name="Hair03" type="Sprite2D" parent="."]
+position = Vector2(125, 65)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("1_xgwfi")
+
+[node name="Hair04" type="Sprite2D" parent="."]
+position = Vector2(124, 65)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("1_xgwfi")
+
+[node name="Hair05" type="Sprite2D" parent="."]
+position = Vector2(125, 65)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("1_xgwfi")
+
+[node name="Hair06" type="Sprite2D" parent="."]
+position = Vector2(124, 65)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("1_xgwfi")
+
+[node name="Hair07" type="Sprite2D" parent="."]
+position = Vector2(125, 65)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("1_xgwfi")
+
+[node name="RotateTimer" type="Timer" parent="."]
+wait_time = 0.2
+one_shot = true

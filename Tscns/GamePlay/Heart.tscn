@@ -1,0 +1,88 @@
+[gd_scene load_steps=18 format=3 uid="uid://ba26pbewibq77"]
+
+[ext_resource type="Script" uid="uid://buapfu8pbfnp5" path="res://Scripts/GamePlay/Heart.cs" id="1_7eknb"]
+[ext_resource type="Texture2D" uid="uid://bw3ocdpufdbnh" path="res://Assets/Heart/00.png" id="2_rxnxa"]
+[ext_resource type="Texture2D" uid="uid://yqewdx06rh5j" path="res://Assets/Heart/01.png" id="3_pxjv5"]
+[ext_resource type="Texture2D" uid="uid://d4dbhingvo4xd" path="res://Assets/Heart/02.png" id="4_yosp3"]
+[ext_resource type="Texture2D" uid="uid://duh36sjkht8ih" path="res://Assets/Heart/03.png" id="5_75v4q"]
+[ext_resource type="Texture2D" uid="uid://b1t0dlamjioeh" path="res://Assets/Heart/04.png" id="6_mbwqj"]
+[ext_resource type="Texture2D" uid="uid://doohe0iqpfytu" path="res://Assets/Heart/05.png" id="7_i0ph2"]
+[ext_resource type="Texture2D" uid="uid://cktvu65thddeu" path="res://Assets/Heart/06.png" id="8_3t0lf"]
+[ext_resource type="Texture2D" uid="uid://co8ypawjwewhw" path="res://Assets/Heart/07.png" id="9_noyjj"]
+[ext_resource type="Texture2D" uid="uid://bn0rbiik0ijao" path="res://Assets/Heart/08.png" id="10_xhdn3"]
+[ext_resource type="Texture2D" uid="uid://dmrj4ihr6a7po" path="res://Assets/Heart/09.png" id="11_yb0pi"]
+[ext_resource type="Texture2D" uid="uid://buo3k12dmfpgc" path="res://Assets/Heart/10.png" id="12_c3eep"]
+[ext_resource type="Texture2D" uid="uid://dqdtsvsqr6wsv" path="res://Assets/Heart/11.png" id="13_ha7jf"]
+[ext_resource type="Texture2D" uid="uid://dpelm0e86w016" path="res://Assets/Heart/12.png" id="14_nkujq"]
+[ext_resource type="Texture2D" uid="uid://bakqrii0ndhep" path="res://Assets/Heart/13.png" id="15_w8a1x"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_63rdp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_rxnxa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_pxjv5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_yosp3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_75v4q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_mbwqj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_i0ph2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_3t0lf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_noyjj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_xhdn3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_yb0pi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_c3eep")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ha7jf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_nkujq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_w8a1x")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hdvds"]
+radius = 12.0
+height = 24.0
+
+[node name="Heart" type="Area2D"]
+script = ExtResource("1_7eknb")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_63rdp")
+autoplay = "default"
+frame_progress = 0.245067
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_hdvds")
+
+[node name="Timer" type="Timer" parent="."]
+process_callback = 0
+wait_time = 2.0
+one_shot = true
+ignore_time_scale = true

@@ -1,0 +1,130 @@
+[gd_scene load_steps=7 format=3 uid="uid://diudiu0llvwbx"]
+
+[ext_resource type="Script" uid="uid://7bm0bkvvvd45" path="res://Scripts/UI/StopScreen.cs" id="1_vy7fs"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_xonqx"]
+font_size = 12
+font_color = Color(0.501961, 0.501961, 0.501961, 1)
+outline_size = 1
+outline_color = Color(0.227451, 0.192157, 0.443137, 1)
+shadow_color = Color(0.227451, 0.192157, 0.443137, 0.835294)
+shadow_offset = Vector2(-0.4, 0.4)
+
+[sub_resource type="LabelSettings" id="LabelSettings_v2x62"]
+font_size = 7
+outline_size = 1
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ja6fj"]
+font_size = 7
+outline_size = 1
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_fxaf6"]
+font_size = 7
+outline_size = 1
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_m6pqf"]
+font_size = 7
+outline_size = 1
+outline_color = Color(0, 0, 0, 1)
+
+[node name="StopScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vy7fs")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 28.0
+offset_right = 180.0
+offset_bottom = 51.0
+text = "暂停"
+label_settings = SubResource("LabelSettings_xonqx")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Retry" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_top = -8.0
+offset_right = 40.0
+offset_bottom = 32.0
+focus_neighbor_bottom = NodePath("../Setting")
+
+[node name="Label" type="Label" parent="Retry"]
+process_mode = 3
+layout_mode = 0
+offset_left = 140.0
+offset_top = 60.0
+offset_right = 180.0
+offset_bottom = 83.0
+text = "重试"
+label_settings = SubResource("LabelSettings_v2x62")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Setting" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_top = -8.0
+offset_right = 40.0
+offset_bottom = 32.0
+focus_neighbor_top = NodePath("../Retry")
+focus_neighbor_bottom = NodePath("../Remap")
+
+[node name="Label" type="Label" parent="Setting"]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 76.0
+offset_right = 180.0
+offset_bottom = 99.0
+text = "选项"
+label_settings = SubResource("LabelSettings_ja6fj")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Remap" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_top = -8.0
+offset_right = 40.0
+offset_bottom = 32.0
+focus_neighbor_top = NodePath("../Setting")
+
+[node name="Label" type="Label" parent="Remap"]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 92.0
+offset_right = 182.0
+offset_bottom = 115.0
+text = "重新开始章节"
+label_settings = SubResource("LabelSettings_fxaf6")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Back" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_top = -8.0
+offset_right = 40.0
+offset_bottom = 32.0
+focus_neighbor_top = NodePath("../Remap")
+focus_neighbor_bottom = NodePath("../Retry")
+
+[node name="Label" type="Label" parent="Back"]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 108.0
+offset_right = 180.0
+offset_bottom = 131.0
+text = "返回地图"
+label_settings = SubResource("LabelSettings_m6pqf")
+horizontal_alignment = 1
+vertical_alignment = 1

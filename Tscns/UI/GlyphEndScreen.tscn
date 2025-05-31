@@ -1,0 +1,55 @@
+[gd_scene load_steps=9 format=3 uid="uid://bsdmwcpr0jq2t"]
+
+[ext_resource type="PackedScene" uid="uid://t5ssxo7f4j68" path="res://Tscns/UI/万家灯火EndScreen.tscn" id="1_mt2op"]
+[ext_resource type="Script" path="res://Scripts/UI/EndScreen.cs" id="2_km2n2"]
+[ext_resource type="Texture2D" uid="uid://dkfmmmi6iw1fe" path="res://Assets/EndScreen/Glyph/01.png" id="2_x3dmf"]
+[ext_resource type="Texture2D" uid="uid://cyfjmsmkn2cy7" path="res://Assets/EndScreen/Glyph/02.png" id="2_yx4xv"]
+[ext_resource type="Texture2D" uid="uid://dy7ee4as4es6h" path="res://Assets/EndScreen/Glyph/04.png" id="3_7rocx"]
+[ext_resource type="Texture2D" uid="uid://caojrq15dbnnw" path="res://Assets/EndScreen/Glyph/06c.png" id="5_u0nri"]
+[ext_resource type="Texture2D" uid="uid://co85vnppy2dxd" path="res://Assets/EndScreen/Glyph/09b.png" id="6_km2n2"]
+[ext_resource type="Texture2D" uid="uid://r3b8s1k1q5qc" path="res://Assets/EndScreen/Glyph/07k.png" id="7_bbxp3"]
+
+[node name="Glyph" instance=ExtResource("1_mt2op")]
+script = ExtResource("2_km2n2")
+
+[node name="TextureRect4" type="TextureRect" parent="Control" index="0"]
+offset_left = -10.0
+offset_right = 1972.0
+offset_bottom = 1080.0
+scale = Vector2(0.167, 0.167)
+texture = ExtResource("2_yx4xv")
+
+[node name="TextureRect" parent="Control" index="1"]
+texture = ExtResource("2_x3dmf")
+
+[node name="TextureRect2" type="TextureRect" parent="Control" index="2"]
+offset_top = 33.0
+offset_right = 1011.0
+offset_bottom = 915.0
+scale = Vector2(0.167, 0.167)
+texture = ExtResource("3_7rocx")
+
+[node name="TextureRect3" type="TextureRect" parent="Control" index="3"]
+offset_left = 62.0
+offset_top = 48.0
+offset_right = 314.0
+offset_bottom = 245.0
+rotation = -0.785397
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("5_u0nri")
+
+[node name="TextureRect5" type="TextureRect" parent="Control" index="4"]
+offset_left = 194.0
+offset_top = 56.0
+offset_right = 724.0
+offset_bottom = 800.0
+scale = Vector2(0.167, 0.167)
+texture = ExtResource("6_km2n2")
+
+[node name="TextureRect6" type="TextureRect" parent="Control" index="5"]
+offset_left = 241.0
+offset_top = 121.0
+offset_right = 755.0
+offset_bottom = 629.0
+scale = Vector2(0.167, 0.167)
+texture = ExtResource("7_bbxp3")

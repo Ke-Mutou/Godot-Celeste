@@ -1,0 +1,23 @@
+[gd_scene load_steps=6 format=3 uid="uid://0jpxknwq0dnh"]
+
+[ext_resource type="Script" uid="uid://ds65qaeu1hljr" path="res://Scripts/Globals.cs" id="1_clymj"]
+[ext_resource type="PackedScene" uid="uid://0at4ogr1wic1" path="res://Tscns/Effects/Resurrection.tscn" id="2_8s5sm"]
+[ext_resource type="PackedScene" uid="uid://bbwfbm1lqiu51" path="res://Tscns/Globals/DeathTransitioned.tscn" id="2_ppwq2"]
+[ext_resource type="PackedScene" uid="uid://dqw7670g0x4pr" path="res://Tscns/Effects/Death.tscn" id="3_ppwq2"]
+[ext_resource type="PackedScene" uid="uid://dc71e2143y57x" path="res://Tscns/Globals/Entrance.tscn" id="4_1pe1v"]
+
+[node name="Globals" type="Node2D"]
+z_index = 4096
+script = ExtResource("1_clymj")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 2
+
+[node name="Resurrection" parent="CanvasLayer" instance=ExtResource("2_8s5sm")]
+
+[node name="Death" parent="CanvasLayer" instance=ExtResource("3_ppwq2")]
+
+[node name="Entrance" parent="CanvasLayer" instance=ExtResource("4_1pe1v")]
+visible = false
+
+[node name="DeathTransitioned" parent="CanvasLayer" instance=ExtResource("2_ppwq2")]

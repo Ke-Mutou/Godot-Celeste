@@ -1,0 +1,112 @@
+[gd_scene load_steps=6 format=3 uid="uid://b5wqujpe44jve"]
+
+[sub_resource type="Shader" id="Shader_mwnv5"]
+code = "shader_type canvas_item;
+
+instance uniform vec4 color: source_color = vec4(0.0, 0.0, 1.0, 1.0); // 默认为蓝色，带透明度
+instance uniform float opacity: hint_range(0.0, 1.0) = 1.0; // 透明度变量，默认为1.0（完全不透明）
+uniform sampler2D screen_texture: hint_screen_texture, repeat_disable, filter_nearest;
+
+void fragment() {
+    vec2 uv = SCREEN_UV;
+
+    // 获取当前像素的颜色
+    vec4 current_pixel = texture(screen_texture, uv);
+
+    // 如果当前像素不透明，将颜色替换为指定颜色，并应用透明度
+    if (current_pixel.a > 0.0) {
+        COLOR = vec4(color.rgb, color.a * opacity); // 应用透明度
+    } else {
+        COLOR = current_pixel; // 保持当前像素的颜色
+    }
+}"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_p2y0v"]
+shader = SubResource("Shader_mwnv5")
+
+[sub_resource type="Animation" id="Animation_r057e"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:instance_shader_parameters/color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.27451, 0.745098, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:instance_shader_parameters/opacity")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.7]
+}
+
+[sub_resource type="Animation" id="Animation_p2y0v"]
+resource_name = "Silhouette"
+length = 0.5
+step = 0.7
+tracks/0/type = "method"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"queue_free"
+}]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:instance_shader_parameters/color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.27451, 0.745098, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:instance_shader_parameters/opacity")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.4]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_r057e"]
+_data = {
+&"RESET": SubResource("Animation_r057e"),
+&"Silhouette": SubResource("Animation_p2y0v")
+}
+
+[node name="Silhouette" type="CanvasGroup"]
+material = SubResource("ShaderMaterial_p2y0v")
+instance_shader_parameters/color = Color(0.27451, 0.745098, 1, 1)
+instance_shader_parameters/opacity = 0.7
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_r057e")
+}
+autoplay = "Silhouette"

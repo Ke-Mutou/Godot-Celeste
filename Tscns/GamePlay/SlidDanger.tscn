@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://b8p635ebogya8"]
+
+[ext_resource type="Script" uid="uid://djxfhnl1ivw16" path="res://Scripts/GamePlay/Danger.cs" id="1_ltoan"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_0xu81"]
+b = Vector2(0, 320)
+
+[node name="SlidDanger" type="StaticBody2D"]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_ltoan")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource("SegmentShape2D_0xu81")

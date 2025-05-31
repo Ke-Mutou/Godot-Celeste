@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://v5v3hhjblk3a"]
+
+[node name="Cat" type="AnimatedSprite2D"]

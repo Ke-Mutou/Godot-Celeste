@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://yo2uvjnyl7o"
+path="res://.godot/imported/岸部眞明 - 花.mp3-446d4ea82689c303d08dfeb7e5315448.mp3str"
+
+[deps]
+
+source_file="res://Assets/Glyph/BGM/岸部眞明 - 花.mp3"
+dest_files=["res://.godot/imported/岸部眞明 - 花.mp3-446d4ea82689c303d08dfeb7e5315448.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

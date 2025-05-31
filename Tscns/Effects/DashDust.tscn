@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://bt6gc4pqv0787"]
+
+[sub_resource type="Gradient" id="Gradient_h7a4m"]
+offsets = PackedFloat32Array(0, 0.272727, 1)
+colors = PackedColorArray(0.4, 0.8, 0.933333, 1, 1, 1, 1, 1, 1, 1, 1, 0.321569)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_c8cc3"]
+gradient = SubResource("Gradient_h7a4m")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_dgtxa"]
+particle_flag_disable_z = true
+emission_shape_offset = Vector3(0, -5, 0)
+emission_shape = 3
+emission_box_extents = Vector3(1, 1, 1)
+direction = Vector3(0, -1, 0)
+initial_velocity_min = 10.0
+initial_velocity_max = 40.0
+gravity = Vector3(0, -1, 0)
+color = Color(0.4, 0.8, 0.933333, 1)
+color_ramp = SubResource("GradientTexture1D_c8cc3")
+
+[node name="DashDust" type="GPUParticles2D"]
+emitting = false
+amount = 100
+lifetime = 0.4
+speed_scale = 0.4
+fixed_fps = 60
+visibility_rect = Rect2(0, 0, 200, 20)
+process_material = SubResource("ParticleProcessMaterial_dgtxa")

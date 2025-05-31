@@ -1,0 +1,336 @@
+[gd_scene load_steps=7 format=3 uid="uid://cw5mejghpsd30"]
+
+[ext_resource type="PackedScene" uid="uid://d3pkuw5d5blqd" path="res://Tscns/Temp/Overlay.tscn" id="1_pcn5f"]
+[ext_resource type="Texture2D" uid="uid://d2j1omnslp5t0" path="res://Assets/UI/KeyBoard/a.png" id="3_pcn5f"]
+[ext_resource type="Texture2D" uid="uid://crvxrlaxccyor" path="res://Assets/UI/KeyBoard/Left.png" id="4_kglxu"]
+[ext_resource type="Texture2D" uid="uid://b0vyfevnciie3" path="res://Assets/UI/KeyBoard/1.png" id="5_kglxu"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_tmw3e"]
+font_color = Color(0.533333, 0.564706, 0.701961, 1)
+outline_size = 1
+outline_color = Color(0, 0, 0, 1)
+shadow_color = Color(0.360784, 0.321569, 0.705882, 1)
+shadow_offset = Vector2(-0.4, 0.4)
+
+[sub_resource type="LabelSettings" id="LabelSettings_iehqs"]
+font_size = 7
+
+[node name="KeyboardOption" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Overlay" parent="." instance=ExtResource("1_pcn5f")]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -256.0
+offset_top = -154.0
+offset_right = 256.0
+offset_bottom = 21.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "键盘设置"
+label_settings = SubResource("LabelSettings_tmw3e")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Left" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 104.0
+offset_top = 36.0
+offset_right = 144.0
+offset_bottom = 76.0
+
+[node name="Label" type="Label" parent="Left"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 48.0
+offset_bottom = 31.0
+text = "向左"
+label_settings = SubResource("LabelSettings_iehqs")
+
+[node name="TextureRect" type="TextureRect" parent="Left"]
+layout_mode = 0
+offset_left = 96.0
+offset_top = 8.0
+offset_right = 176.0
+offset_bottom = 88.0
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("3_pcn5f")
+
+[node name="TextureRect2" type="TextureRect" parent="Left"]
+offset_left = 84.0
+offset_top = 8.0
+offset_right = 164.0
+offset_bottom = 88.0
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("4_kglxu")
+
+[node name="TextureRect3" type="TextureRect" parent="Left"]
+offset_left = 72.0
+offset_top = 8.0
+offset_right = 152.0
+offset_bottom = 88.0
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("5_kglxu")
+
+[node name="Right" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 104.0
+offset_top = 56.0
+offset_right = 144.0
+offset_bottom = 96.0
+
+[node name="Label" type="Label" parent="Right"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 4.0
+offset_right = 48.0
+offset_bottom = 27.0
+text = "向右"
+label_settings = SubResource("LabelSettings_iehqs")
+
+[node name="TextureRect" type="TextureRect" parent="Right"]
+offset_left = 96.0
+offset_top = 4.0
+offset_right = 176.0
+offset_bottom = 84.0
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("3_pcn5f")
+
+[node name="TextureRect2" type="TextureRect" parent="Right"]
+offset_left = 84.0
+offset_top = 4.0
+offset_right = 164.0
+offset_bottom = 84.0
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("4_kglxu")
+
+[node name="TextureRect3" type="TextureRect" parent="Right"]
+offset_left = 72.0
+offset_top = 4.0
+offset_right = 152.0
+offset_bottom = 84.0
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("5_kglxu")
+
+[node name="Up" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 104.0
+offset_top = 72.0
+offset_right = 144.0
+offset_bottom = 112.0
+
+[node name="Label" type="Label" parent="Up"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 4.0
+offset_right = 48.0
+offset_bottom = 27.0
+text = "向上"
+label_settings = SubResource("LabelSettings_iehqs")
+
+[node name="TextureRect" type="TextureRect" parent="Up"]
+offset_left = 96.0
+offset_top = 4.0
+offset_right = 176.0
+offset_bottom = 84.0
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("3_pcn5f")
+
+[node name="TextureRect2" type="TextureRect" parent="Up"]
+offset_left = 84.0
+offset_top = 4.0
+offset_right = 164.0
+offset_bottom = 84.0
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("4_kglxu")
+
+[node name="TextureRect3" type="TextureRect" parent="Up"]
+offset_left = 72.0
+offset_top = 4.0
+offset_right = 152.0
+offset_bottom = 84.0
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("5_kglxu")
+
+[node name="Down" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 104.0
+offset_top = 88.0
+offset_right = 144.0
+offset_bottom = 128.0
+
+[node name="Label" type="Label" parent="Down"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 4.0
+offset_right = 48.0
+offset_bottom = 27.0
+text = "向下"
+label_settings = SubResource("LabelSettings_iehqs")
+
+[node name="TextureRect" type="TextureRect" parent="Down"]
+offset_left = 96.0
+offset_top = 4.0
+offset_right = 176.0
+offset_bottom = 84.0
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("3_pcn5f")
+
+[node name="TextureRect2" type="TextureRect" parent="Down"]
+offset_left = 84.0
+offset_top = 4.0
+offset_right = 164.0
+offset_bottom = 84.0
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("4_kglxu")
+
+[node name="TextureRect3" type="TextureRect" parent="Down"]
+offset_left = 72.0
+offset_top = 4.0
+offset_right = 152.0
+offset_bottom = 84.0
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("5_kglxu")
+
+[node name="Dash" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 104.0
+offset_top = 104.0
+offset_right = 144.0
+offset_bottom = 144.0
+
+[node name="Label" type="Label" parent="Dash"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 4.0
+offset_right = 48.0
+offset_bottom = 27.0
+text = "突进"
+label_settings = SubResource("LabelSettings_iehqs")
+
+[node name="TextureRect" type="TextureRect" parent="Dash"]
+offset_left = 96.0
+offset_top = 4.0
+offset_right = 176.0
+offset_bottom = 84.0
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("3_pcn5f")
+
+[node name="TextureRect2" type="TextureRect" parent="Dash"]
+offset_left = 84.0
+offset_top = 4.0
+offset_right = 164.0
+offset_bottom = 84.0
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("4_kglxu")
+
+[node name="TextureRect3" type="TextureRect" parent="Dash"]
+offset_left = 72.0
+offset_top = 4.0
+offset_right = 152.0
+offset_bottom = 84.0
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("5_kglxu")
+
+[node name="Grab" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 104.0
+offset_top = 120.0
+offset_right = 144.0
+offset_bottom = 160.0
+
+[node name="Label" type="Label" parent="Grab"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 4.0
+offset_right = 48.0
+offset_bottom = 27.0
+text = "抓住"
+label_settings = SubResource("LabelSettings_iehqs")
+
+[node name="TextureRect" type="TextureRect" parent="Grab"]
+offset_left = 96.0
+offset_top = 4.0
+offset_right = 176.0
+offset_bottom = 84.0
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("3_pcn5f")
+
+[node name="TextureRect2" type="TextureRect" parent="Grab"]
+offset_left = 84.0
+offset_top = 4.0
+offset_right = 164.0
+offset_bottom = 84.0
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("4_kglxu")
+
+[node name="TextureRect3" type="TextureRect" parent="Grab"]
+offset_left = 72.0
+offset_top = 4.0
+offset_right = 152.0
+offset_bottom = 84.0
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("5_kglxu")
+
+[node name="Stop" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 104.0
+offset_top = 136.0
+offset_right = 144.0
+offset_bottom = 176.0
+
+[node name="Label" type="Label" parent="Stop"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 4.0
+offset_right = 48.0
+offset_bottom = 27.0
+text = "暂停"
+label_settings = SubResource("LabelSettings_iehqs")
+
+[node name="TextureRect" type="TextureRect" parent="Stop"]
+offset_left = 96.0
+offset_top = 4.0
+offset_right = 176.0
+offset_bottom = 84.0
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("3_pcn5f")
+
+[node name="TextureRect2" type="TextureRect" parent="Stop"]
+offset_left = 84.0
+offset_top = 4.0
+offset_right = 164.0
+offset_bottom = 84.0
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("4_kglxu")
+
+[node name="TextureRect3" type="TextureRect" parent="Stop"]
+offset_left = 72.0
+offset_top = 4.0
+offset_right = 152.0
+offset_bottom = 84.0
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("5_kglxu")
+
+[node name="Overlay2" parent="." instance=ExtResource("1_pcn5f")]
+modulate = Color(1, 1, 1, 0.0901961)

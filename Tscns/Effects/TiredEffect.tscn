@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://dx86fm472o2y1"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_76v38"]
+particle_flag_disable_z = true
+emission_shape = 1
+emission_sphere_radius = 15.0
+gravity = Vector3(0, 0, 0)
+radial_accel_min = -100.0
+radial_accel_max = -100.0
+color = Color(1, 0, 0, 1)
+
+[node name="TiredEffect" type="GPUParticles2D"]
+amount = 30
+lifetime = 0.2
+process_material = SubResource("ParticleProcessMaterial_76v38")

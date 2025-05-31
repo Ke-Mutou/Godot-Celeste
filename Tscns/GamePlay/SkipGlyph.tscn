@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://b34eyd532pc"]
+
+[ext_resource type="PackedScene" uid="uid://cqcdn1vdgo5np" path="res://Tscns/GamePlay/Skip.tscn" id="1_rsewj"]
+[ext_resource type="Texture2D" uid="uid://dyiqd1e2lrp1s" path="res://Assets/Glyph/OvergrownLinn_up01.png" id="2_6t3xe"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6t3xe"]
+size = Vector2(7, 5)
+
+[node name="Skip" instance=ExtResource("1_rsewj")]
+
+[node name="OutlineUp00" parent="." index="0"]
+texture = ExtResource("2_6t3xe")
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(0.5, 1)
+shape = SubResource("RectangleShape2D_6t3xe")

@@ -1,0 +1,617 @@
+[gd_scene load_steps=152 format=3 uid="uid://yo1snw368rue"]
+
+[ext_resource type="Texture2D" uid="uid://du7l8m1frut4f" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog000.png" id="1_kjf0c"]
+[ext_resource type="Texture2D" uid="uid://b8jglttjssiq0" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog001.png" id="2_t8uge"]
+[ext_resource type="Texture2D" uid="uid://haapf1ouedcn" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog002.png" id="3_1kd0q"]
+[ext_resource type="Texture2D" uid="uid://pmi17gtterp5" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog003.png" id="4_3rqlw"]
+[ext_resource type="Texture2D" uid="uid://b3o8d7qr5un2c" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog004.png" id="5_lncgx"]
+[ext_resource type="Texture2D" uid="uid://o4kv0r703tuq" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog005.png" id="6_0152m"]
+[ext_resource type="Texture2D" uid="uid://cp6xmd1nrb5wc" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog006.png" id="7_62asy"]
+[ext_resource type="Texture2D" uid="uid://bnhqplunsgt1a" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog007.png" id="8_7835g"]
+[ext_resource type="Texture2D" uid="uid://wl76dumlm1x7" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog008.png" id="9_nkorl"]
+[ext_resource type="Texture2D" uid="uid://cbml1k5f7uqnu" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog009.png" id="10_1t1m7"]
+[ext_resource type="Texture2D" uid="uid://kaibfshnmr7k" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog010.png" id="11_8bt1k"]
+[ext_resource type="Texture2D" uid="uid://bf14e2bjunei4" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog011.png" id="12_r14gw"]
+[ext_resource type="Texture2D" uid="uid://cg77l5c5fw1um" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog012.png" id="13_l2drl"]
+[ext_resource type="Texture2D" uid="uid://krkmefy3k620" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog013.png" id="14_yjw8b"]
+[ext_resource type="Texture2D" uid="uid://b4t2hn86jxdex" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog014.png" id="15_d2rb3"]
+[ext_resource type="Texture2D" uid="uid://ypwlnhukwrof" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog015.png" id="16_aevax"]
+[ext_resource type="Texture2D" uid="uid://cb3xp1igxf1we" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog016.png" id="17_ny06p"]
+[ext_resource type="Texture2D" uid="uid://b0yqm1my6m1fa" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog017.png" id="18_ev4dy"]
+[ext_resource type="Texture2D" uid="uid://d3xp7h72q476l" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog018.png" id="19_nbt8b"]
+[ext_resource type="Texture2D" uid="uid://cckhbx4qohqsj" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog019.png" id="20_tcrj5"]
+[ext_resource type="Texture2D" uid="uid://bn5jekbad04w8" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog020.png" id="21_oewtt"]
+[ext_resource type="Texture2D" uid="uid://dbo63mgkunbid" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog021.png" id="22_ttyew"]
+[ext_resource type="Texture2D" uid="uid://bkv200vfi7rya" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog022.png" id="23_6tw0j"]
+[ext_resource type="Texture2D" uid="uid://c8sppwql3yhpn" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog023.png" id="24_cn5ek"]
+[ext_resource type="Texture2D" uid="uid://cqt4ewteskf25" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog024.png" id="25_nu8hi"]
+[ext_resource type="Texture2D" uid="uid://cth8nf5mbxg0i" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog025.png" id="26_w6xfh"]
+[ext_resource type="Texture2D" uid="uid://6fjeporkaylt" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog026.png" id="27_ja50f"]
+[ext_resource type="Texture2D" uid="uid://bs0jd46qrg27x" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog027.png" id="28_i0kc0"]
+[ext_resource type="Texture2D" uid="uid://da87kel0a1gf1" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog028.png" id="29_h1yod"]
+[ext_resource type="Texture2D" uid="uid://cau24c60digbk" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog029.png" id="30_vvdk3"]
+[ext_resource type="Texture2D" uid="uid://dwxa3b3etcykp" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog030.png" id="31_lryma"]
+[ext_resource type="Texture2D" uid="uid://d2f1ehx7chw7r" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog031.png" id="32_i7fqd"]
+[ext_resource type="Texture2D" uid="uid://dx4fn2xbnvutm" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog032.png" id="33_iht20"]
+[ext_resource type="Texture2D" uid="uid://c0810y0axtlmu" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog033.png" id="34_u0uy3"]
+[ext_resource type="Texture2D" uid="uid://b22db013es4cc" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog034.png" id="35_v3l3g"]
+[ext_resource type="Texture2D" uid="uid://dy4tri00nta1c" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog035.png" id="36_pusvf"]
+[ext_resource type="Texture2D" uid="uid://gleprxbm5nul" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog036.png" id="37_63dow"]
+[ext_resource type="Texture2D" uid="uid://ckb4amau5r0gf" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog037.png" id="38_1iiu5"]
+[ext_resource type="Texture2D" uid="uid://bc8dud3qgj2ld" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog038.png" id="39_jpw2n"]
+[ext_resource type="Texture2D" uid="uid://bs84pjnro2alw" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog039.png" id="40_vp366"]
+[ext_resource type="Texture2D" uid="uid://bmcokg2uc310d" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog040.png" id="41_cxamc"]
+[ext_resource type="Texture2D" uid="uid://w40diiqpynxi" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog041.png" id="42_edoiy"]
+[ext_resource type="Texture2D" uid="uid://b5dktdojv3a3y" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog042.png" id="43_bntrp"]
+[ext_resource type="Texture2D" uid="uid://bi280u0s5aqiu" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog043.png" id="44_fivef"]
+[ext_resource type="Texture2D" uid="uid://chssa4vljm7l0" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog044.png" id="45_b7htv"]
+[ext_resource type="Texture2D" uid="uid://bfjn7ebokejhx" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog045.png" id="46_ylx74"]
+[ext_resource type="Texture2D" uid="uid://cq68mmsr5b8mo" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog046.png" id="47_ash61"]
+[ext_resource type="Texture2D" uid="uid://b5lq8di52qsdh" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog047.png" id="48_is7y2"]
+[ext_resource type="Texture2D" uid="uid://bneacr0yuo1oc" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog048.png" id="49_p2e6a"]
+[ext_resource type="Texture2D" uid="uid://b3t23w3iwec4t" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog049.png" id="50_chac1"]
+[ext_resource type="Texture2D" uid="uid://cs1ktq0rfus52" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog050.png" id="51_1ie5f"]
+[ext_resource type="Texture2D" uid="uid://7d8tdvbw83ya" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog051.png" id="52_kqgvw"]
+[ext_resource type="Texture2D" uid="uid://cjkcw2fd6riol" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog052.png" id="53_y3f5w"]
+[ext_resource type="Texture2D" uid="uid://lj7pi25vtbgh" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog053.png" id="54_oydne"]
+[ext_resource type="Texture2D" uid="uid://ct8usd1edcia4" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog054.png" id="55_qv67j"]
+[ext_resource type="Texture2D" uid="uid://diyd12jsxxaif" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog055.png" id="56_28fuv"]
+[ext_resource type="Texture2D" uid="uid://6pb3lcti22fh" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog056.png" id="57_subi7"]
+[ext_resource type="Texture2D" uid="uid://7fpfduccebbb" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog057.png" id="58_ocbw3"]
+[ext_resource type="Texture2D" uid="uid://b465wn3v3rtdx" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog058.png" id="59_avve0"]
+[ext_resource type="Texture2D" uid="uid://1ru3ox1pidgf" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog059.png" id="60_yvnqs"]
+[ext_resource type="Texture2D" uid="uid://bne63tshj08ro" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog060.png" id="61_2lhda"]
+[ext_resource type="Texture2D" uid="uid://b8tfvfy8dcv71" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog061.png" id="62_syoqe"]
+[ext_resource type="Texture2D" uid="uid://q66j5v0drdcq" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog062.png" id="63_ram3c"]
+[ext_resource type="Texture2D" uid="uid://b5vvwm18j6xgo" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog063.png" id="64_napl1"]
+[ext_resource type="Texture2D" uid="uid://bks85bd2k24bn" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog064.png" id="65_h4h87"]
+[ext_resource type="Texture2D" uid="uid://d3eu0mxkduyxn" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog065.png" id="66_s47gu"]
+[ext_resource type="Texture2D" uid="uid://be6325f40n1bc" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog066.png" id="67_6blan"]
+[ext_resource type="Texture2D" uid="uid://bocedvgte5vph" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog067.png" id="68_rtgll"]
+[ext_resource type="Texture2D" uid="uid://417ng8ixkewx" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog068.png" id="69_wrokj"]
+[ext_resource type="Texture2D" uid="uid://d0l6l4ljuo8dl" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog069.png" id="70_8axhx"]
+[ext_resource type="Texture2D" uid="uid://befst7bbgrso4" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog070.png" id="71_i0g60"]
+[ext_resource type="Texture2D" uid="uid://dlhl8y1ik7a53" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog071.png" id="72_ltyfj"]
+[ext_resource type="Texture2D" uid="uid://i4m0kh2vajf3" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog072.png" id="73_lvwws"]
+[ext_resource type="Texture2D" uid="uid://6cmur7oqps7j" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog073.png" id="74_h5gku"]
+[ext_resource type="Texture2D" uid="uid://dwtnhl1jmcrlh" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog074.png" id="75_hxv5c"]
+[ext_resource type="Texture2D" uid="uid://cvy2scutywcoe" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog075.png" id="76_noaon"]
+[ext_resource type="Texture2D" uid="uid://bttnhkgp6vcsj" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog076.png" id="77_vfsio"]
+[ext_resource type="Texture2D" uid="uid://bb6m1a2mykx4w" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog077.png" id="78_jby2t"]
+[ext_resource type="Texture2D" uid="uid://d2ieanmeyjhyx" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog078.png" id="79_0oa5q"]
+[ext_resource type="Texture2D" uid="uid://bart8kiwm4p3l" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog079.png" id="80_kqud8"]
+[ext_resource type="Texture2D" uid="uid://c7mq5x0r6dern" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog080.png" id="81_atc0w"]
+[ext_resource type="Texture2D" uid="uid://c6xdt2s7rcan6" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog081.png" id="82_koter"]
+[ext_resource type="Texture2D" uid="uid://mr8dgyb7f3qc" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog082.png" id="83_slmvi"]
+[ext_resource type="Texture2D" uid="uid://ce524ywbaxmcd" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog083.png" id="84_yhsva"]
+[ext_resource type="Texture2D" uid="uid://bgur6b2eskp1k" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog084.png" id="85_t4mx6"]
+[ext_resource type="Texture2D" uid="uid://b2773o5kpirx" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog085.png" id="86_aufn4"]
+[ext_resource type="Texture2D" uid="uid://sgtanw0y4ea7" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog086.png" id="87_e3ggt"]
+[ext_resource type="Texture2D" uid="uid://dccj4xe6ohx86" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog087.png" id="88_rvch0"]
+[ext_resource type="Texture2D" uid="uid://bdt1nsa01tk4r" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog088.png" id="89_cb2w7"]
+[ext_resource type="Texture2D" uid="uid://bpg7w1dwv30pw" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog089.png" id="90_noq02"]
+[ext_resource type="Texture2D" uid="uid://b3c5gdx61dvwt" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog090.png" id="91_5n3gu"]
+[ext_resource type="Texture2D" uid="uid://b2yv7xqpopf2w" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog091.png" id="92_nucdc"]
+[ext_resource type="Texture2D" uid="uid://brt6afmpwc43u" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog092.png" id="93_hr2g5"]
+[ext_resource type="Texture2D" uid="uid://cbx2pg2yecglr" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog093.png" id="94_aa4r0"]
+[ext_resource type="Texture2D" uid="uid://cyb6acv1bni5g" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog094.png" id="95_pukiv"]
+[ext_resource type="Texture2D" uid="uid://ct6plvxupcq5i" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog095.png" id="96_5gblo"]
+[ext_resource type="Texture2D" uid="uid://drq2ngshjbv4o" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog096.png" id="97_gx5v8"]
+[ext_resource type="Texture2D" uid="uid://dew73s3h3y8ce" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog097.png" id="98_6ixmd"]
+[ext_resource type="Texture2D" uid="uid://u1hhyxt4kht7" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog098.png" id="99_hki45"]
+[ext_resource type="Texture2D" uid="uid://dm7kevtddsms" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog099.png" id="100_clhot"]
+[ext_resource type="Texture2D" uid="uid://bqqbjbdqxyibg" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog100.png" id="101_cpnlh"]
+[ext_resource type="Texture2D" uid="uid://uvejj6y7v8r1" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog101.png" id="102_og27q"]
+[ext_resource type="Texture2D" uid="uid://4qe1qy5ua8fo" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog102.png" id="103_a3ns2"]
+[ext_resource type="Texture2D" uid="uid://47prbxjm5g5g" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog103.png" id="104_m4rxf"]
+[ext_resource type="Texture2D" uid="uid://bryiwctemglbo" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog104.png" id="105_7e04w"]
+[ext_resource type="Texture2D" uid="uid://cccbps1a0ks3y" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog105.png" id="106_s2gav"]
+[ext_resource type="Texture2D" uid="uid://bn2g6ung1jcmr" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog106.png" id="107_nq8bu"]
+[ext_resource type="Texture2D" uid="uid://c80y7t6np4imi" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog107.png" id="108_724jf"]
+[ext_resource type="Texture2D" uid="uid://db1g5mhmu6x1s" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog108.png" id="109_qyjqt"]
+[ext_resource type="Texture2D" uid="uid://djf0q8gd6la7e" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog109.png" id="110_24150"]
+[ext_resource type="Texture2D" uid="uid://cjlq17gbmv151" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog110.png" id="111_1e0vm"]
+[ext_resource type="Texture2D" uid="uid://hetkddrbm0qs" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog111.png" id="112_qbyxr"]
+[ext_resource type="Texture2D" uid="uid://xr8cvk3ktn1b" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog112.png" id="113_jeixp"]
+[ext_resource type="Texture2D" uid="uid://boautwo0jahmg" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog113.png" id="114_0urvd"]
+[ext_resource type="Texture2D" uid="uid://ssjj16y3r6dp" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog114.png" id="115_vcghk"]
+[ext_resource type="Texture2D" uid="uid://bvrrut1wmhwua" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog115.png" id="116_le1ka"]
+[ext_resource type="Texture2D" uid="uid://q21lsm7ujah0" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog116.png" id="117_5swry"]
+[ext_resource type="Texture2D" uid="uid://bt5t3sejikq40" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog117.png" id="118_wjcvg"]
+[ext_resource type="Texture2D" uid="uid://bsrqt5wxxwtwx" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog118.png" id="119_gktko"]
+[ext_resource type="Texture2D" uid="uid://bw2eb2py2frpe" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog119.png" id="120_kvevf"]
+[ext_resource type="Texture2D" uid="uid://dgtlxc1ngiw3a" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog120.png" id="121_qgkfj"]
+[ext_resource type="Texture2D" uid="uid://c2f5twv1a4w0h" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog121.png" id="122_4hdbk"]
+[ext_resource type="Texture2D" uid="uid://bfxffg5xu7bae" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog122.png" id="123_4jprs"]
+[ext_resource type="Texture2D" uid="uid://cheyce0xutjfk" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog123.png" id="124_fbhdt"]
+[ext_resource type="Texture2D" uid="uid://cpo1xu3grket0" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog124.png" id="125_y7kd7"]
+[ext_resource type="Texture2D" uid="uid://cm40tua01cumq" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog125.png" id="126_uwonr"]
+[ext_resource type="Texture2D" uid="uid://celyhqns7s5q2" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog126.png" id="127_n7wgn"]
+[ext_resource type="Texture2D" uid="uid://dufm2id1311dp" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog127.png" id="128_ttcvf"]
+[ext_resource type="Texture2D" uid="uid://5ml4d76l3ssb" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog128.png" id="129_odrfk"]
+[ext_resource type="Texture2D" uid="uid://bvdkd7y700kbr" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog129.png" id="130_ok5h5"]
+[ext_resource type="Texture2D" uid="uid://b3p10jckmncdf" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog130.png" id="131_gk662"]
+[ext_resource type="Texture2D" uid="uid://bbxkk70nrrn5u" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog131.png" id="132_nxnv2"]
+[ext_resource type="Texture2D" uid="uid://cyu1xp3exkwwu" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog132.png" id="133_yprk5"]
+[ext_resource type="Texture2D" uid="uid://dde2odglgufcq" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog133.png" id="134_rvrp6"]
+[ext_resource type="Texture2D" uid="uid://s1dojj5scn7v" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog134.png" id="135_41hci"]
+[ext_resource type="Texture2D" uid="uid://cxdnff8ehk4s" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog135.png" id="136_1nacf"]
+[ext_resource type="Texture2D" uid="uid://cpgy7yvgk1pom" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog136.png" id="137_tnhdg"]
+[ext_resource type="Texture2D" uid="uid://bkyardfxoey8x" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog137.png" id="138_hroax"]
+[ext_resource type="Texture2D" uid="uid://6p1vsf50a1fm" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog138.png" id="139_emb3a"]
+[ext_resource type="Texture2D" uid="uid://ceeinebsp66tr" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog139.png" id="140_gnyqm"]
+[ext_resource type="Texture2D" uid="uid://u4jvavenvvsq" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog140.png" id="141_petew"]
+[ext_resource type="Texture2D" uid="uid://co8fhjiu0vjfg" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog141.png" id="142_dgiek"]
+[ext_resource type="Texture2D" uid="uid://b8wh2gpxgprao" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog142.png" id="143_tjby3"]
+[ext_resource type="Texture2D" uid="uid://dk1ip2o6v4ayg" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog143.png" id="144_45qn4"]
+[ext_resource type="Texture2D" uid="uid://dkgmiok04wvbl" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog144.png" id="145_ra8cg"]
+[ext_resource type="Texture2D" uid="uid://ecwqgfmh5npy" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog145.png" id="146_lyybs"]
+[ext_resource type="Texture2D" uid="uid://s6b0157d5pvp" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog146.png" id="147_2engj"]
+[ext_resource type="Texture2D" uid="uid://c86gw77gq6hxw" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog147.png" id="148_ibk2p"]
+[ext_resource type="Texture2D" uid="uid://cwaqhhimd3lco" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog148.png" id="149_nxd8u"]
+[ext_resource type="Texture2D" uid="uid://bdq7yx1fjkjyq" path="res://Assets/万家灯火/decal/motonine_fog/motonine_fog149.png" id="150_xjy8i"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mm4lb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_kjf0c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_t8uge")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_1kd0q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_3rqlw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_lncgx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_0152m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_62asy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_7835g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_nkorl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_1t1m7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_8bt1k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_r14gw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_l2drl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_yjw8b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_d2rb3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_aevax")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_ny06p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_ev4dy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_nbt8b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_tcrj5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_oewtt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_ttyew")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_6tw0j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_cn5ek")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_nu8hi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_w6xfh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_ja50f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_i0kc0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_h1yod")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_vvdk3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_lryma")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_i7fqd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_iht20")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_u0uy3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_v3l3g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_pusvf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_63dow")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_1iiu5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_jpw2n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_vp366")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_cxamc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_edoiy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_bntrp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_fivef")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_b7htv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_ylx74")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_ash61")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_is7y2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_p2e6a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_chac1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_1ie5f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_kqgvw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_y3f5w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_oydne")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_qv67j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_28fuv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_subi7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_ocbw3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_avve0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_yvnqs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_2lhda")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_syoqe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_ram3c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_napl1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_h4h87")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_s47gu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_6blan")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_rtgll")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_wrokj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_8axhx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_i0g60")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_ltyfj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_lvwws")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_h5gku")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_hxv5c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_noaon")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_vfsio")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_jby2t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_0oa5q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_kqud8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_atc0w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_koter")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_slmvi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_yhsva")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_t4mx6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_aufn4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_e3ggt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_rvch0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_cb2w7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_noq02")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_5n3gu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_nucdc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_hr2g5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_aa4r0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_pukiv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_5gblo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_gx5v8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_6ixmd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_hki45")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_clhot")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_cpnlh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_og27q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_a3ns2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_m4rxf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_7e04w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("106_s2gav")
+}, {
+"duration": 1.0,
+"texture": ExtResource("107_nq8bu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("108_724jf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("109_qyjqt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("110_24150")
+}, {
+"duration": 1.0,
+"texture": ExtResource("111_1e0vm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("112_qbyxr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("113_jeixp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("114_0urvd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("115_vcghk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("116_le1ka")
+}, {
+"duration": 1.0,
+"texture": ExtResource("117_5swry")
+}, {
+"duration": 1.0,
+"texture": ExtResource("118_wjcvg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("119_gktko")
+}, {
+"duration": 1.0,
+"texture": ExtResource("120_kvevf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("121_qgkfj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("122_4hdbk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("123_4jprs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("124_fbhdt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("125_y7kd7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("126_uwonr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("127_n7wgn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("128_ttcvf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("129_odrfk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("130_ok5h5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("131_gk662")
+}, {
+"duration": 1.0,
+"texture": ExtResource("132_nxnv2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("133_yprk5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("134_rvrp6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("135_41hci")
+}, {
+"duration": 1.0,
+"texture": ExtResource("136_1nacf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("137_tnhdg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("138_hroax")
+}, {
+"duration": 1.0,
+"texture": ExtResource("139_emb3a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("140_gnyqm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("141_petew")
+}, {
+"duration": 1.0,
+"texture": ExtResource("142_dgiek")
+}, {
+"duration": 1.0,
+"texture": ExtResource("143_tjby3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("144_45qn4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("145_ra8cg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("146_lyybs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("147_2engj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("148_ibk2p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("149_nxd8u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("150_xjy8i")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Fog" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_mm4lb")
+autoplay = "default"
+frame_progress = 0.0293551

@@ -1,0 +1,45 @@
+[gd_scene load_steps=8 format=3 uid="uid://d42b82rg5egr"]
+
+[ext_resource type="PackedScene" uid="uid://b4s81um828out" path="res://Scripts/GamePlay/Level.tscn" id="1_li4sv"]
+[ext_resource type="PackedScene" uid="uid://cgxskbjyunfgf" path="res://Tscns/Maps/万家灯火.tscn" id="2_8jyw2"]
+[ext_resource type="PackedScene" uid="uid://bnva5a64adp5c" path="res://Tscns/DebugPanel.tscn" id="3_o0f7b"]
+[ext_resource type="PackedScene" uid="uid://bhpsa820uf1q8" path="res://Tscns/Player.tscn" id="3_whibe"]
+[ext_resource type="Script" uid="uid://cjbh873cwlvid" path="res://Scripts/FollowCamera.cs" id="4_mq87s"]
+[ext_resource type="PackedScene" uid="uid://0jpxknwq0dnh" path="res://Tscns/Globals/Globals.tscn" id="4_whibe"]
+[ext_resource type="PackedScene" uid="uid://wuc3tprkx7t1" path="res://Tscns/Globals/EffectsManager.tscn" id="5_mq87s"]
+
+[node name="万家灯火" type="Node2D"]
+
+[node name="GameViewportContainer" type="SubViewportContainer" parent="."]
+offset_right = 320.0
+offset_bottom = 180.0
+
+[node name="GameViewport" type="SubViewport" parent="GameViewportContainer"]
+handle_input_locally = false
+canvas_item_default_texture_filter = 0
+audio_listener_enable_2d = true
+size = Vector2i(320, 180)
+render_target_update_mode = 4
+
+[node name="Level" parent="GameViewportContainer/GameViewport" instance=ExtResource("1_li4sv")]
+
+[node name="Map" parent="GameViewportContainer/GameViewport/Level" instance=ExtResource("2_8jyw2")]
+
+[node name="Player" parent="GameViewportContainer/GameViewport/Level" instance=ExtResource("3_whibe")]
+position = Vector2(76, 137)
+
+[node name="FollowCamera" type="Camera2D" parent="GameViewportContainer/GameViewport/Level/Player" groups=["FollowCamera"]]
+process_mode = 3
+scale = Vector2(-71.1502, 23.2382)
+process_callback = 0
+limit_smoothed = true
+script = ExtResource("4_mq87s")
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="DebugPanel" parent="UI" instance=ExtResource("3_o0f7b")]
+visible = false
+
+[node name="Globals" parent="." groups=["Globals"] instance=ExtResource("4_whibe")]
+
+[node name="EffectsManager" parent="." groups=["EffectsManager"] instance=ExtResource("5_mq87s")]

@@ -1,0 +1,49 @@
+[gd_scene load_steps=7 format=3 uid="uid://b1mt3qvncslpl"]
+
+[ext_resource type="Shader" uid="uid://dac7jiqiao45f" path="res://Materials/PlayerHair.gdshader" id="1_5isyj"]
+[ext_resource type="Script" uid="uid://1h3o8k35s6u6" path="res://Scripts/PlayerHair.cs" id="1_8mvtj"]
+[ext_resource type="Texture2D" uid="uid://6hb6d50hvx3t" path="res://Assets/Picture/Hair/hair00.png" id="2_l4lni"]
+[ext_resource type="Texture2D" uid="uid://ogxh1ux6gq8n" path="res://Assets/Picture/Hair/bangs00.png" id="3_42w8o"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_x364y"]
+shader = ExtResource("1_5isyj")
+shader_parameter/line_colour = Color(0, 0, 0, 1)
+shader_parameter/line_thickness = 1
+shader_parameter/from1 = Color(1, 1, 1, 1)
+shader_parameter/to1 = Color(0.6745, 0.1961, 0.1961, 1)
+shader_parameter/threshold1 = 0.1
+shader_parameter/from2 = Color(0.5255, 0.5255, 0.5255, 1)
+shader_parameter/to2 = Color(0.3529, 0.102, 0.102, 1)
+shader_parameter/threshold2 = 0.1
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5isyj"]
+
+[node name="PlayerHair" type="CanvasGroup" groups=["PlayerHair"]]
+material = SubResource("ShaderMaterial_x364y")
+script = ExtResource("1_8mvtj")
+Distance = 4.5
+
+[node name="Bangs" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_5isyj")
+position = Vector2(0, 1)
+texture = ExtResource("3_42w8o")
+
+[node name="Hair00" type="Sprite2D" parent="Bangs"]
+show_behind_parent = true
+position = Vector2(0, -1)
+texture = ExtResource("2_l4lni")
+
+[node name="Hair01" type="Sprite2D" parent="Bangs"]
+show_behind_parent = true
+position = Vector2(0, -1)
+texture = ExtResource("2_l4lni")
+
+[node name="Hair02" type="Sprite2D" parent="Bangs"]
+show_behind_parent = true
+position = Vector2(0, -1)
+texture = ExtResource("2_l4lni")
+
+[node name="Hair03" type="Sprite2D" parent="Bangs"]
+show_behind_parent = true
+position = Vector2(0, -1)
+texture = ExtResource("2_l4lni")

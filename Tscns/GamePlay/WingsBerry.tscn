@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://c7tpk0oceehhj"]
+
+[ext_resource type="PackedScene" uid="uid://df8wn7c1ny7fa" path="res://Tscns/GamePlay/WingsStrawberry.tscn" id="1_7vigy"]
+
+[node name="WingsStrawberry" instance=ExtResource("1_7vigy")]

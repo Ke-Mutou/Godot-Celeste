@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://b1lh4tsln2g6b"]
+
+[ext_resource type="Script" uid="uid://dw8x687hi3kr5" path="res://Scripts/RecordArea.cs" id="1_ilj8i"]
+[ext_resource type="Texture2D" uid="uid://d2y52fawa6nwo" path="res://Assets/Picture/Player/Madline.png" id="2_66qtp"]
+[ext_resource type="Texture2D" uid="uid://ogxh1ux6gq8n" path="res://Assets/Picture/Hair/bangs00.png" id="3_lktwc"]
+
+[node name="RecordArea" type="Area2D"]
+script = ExtResource("1_ilj8i")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.568627)
+texture = ExtResource("2_66qtp")
+region_enabled = true
+region_rect = Rect2(0, 96, 32, 32)
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D"]
+modulate = Color(0.67451, 0.196078, 0.196078, 1)
+show_behind_parent = true
+position = Vector2(0, 5)
+texture = ExtResource("3_lktwc")

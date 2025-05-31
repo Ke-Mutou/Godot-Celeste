@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://04pg0dy4l6xe"]
+
+[ext_resource type="PackedScene" uid="uid://ns23wctrx2nt" path="res://Tscns/GamePlay/CrumblePlatform.tscn" id="1_dj6io"]
+[ext_resource type="Texture2D" uid="uid://ccyupftekn8ma" path="res://Assets/万家灯火/jumpthru/default.png" id="2_dj6io"]
+
+[node name="CrumblePlatform" instance=ExtResource("1_dj6io")]
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_dj6io")

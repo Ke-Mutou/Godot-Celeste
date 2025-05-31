@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bd80frm8l8g17"]
+
+[ext_resource type="Texture2D" uid="uid://cqa572y58loim" path="res://Assets/UI/logo.png" id="1_u7sid"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_kp362"]
+blend_mode = 1
+
+[node name="Logo" type="Sprite2D"]
+material = SubResource("CanvasItemMaterial_kp362")
+scale = Vector2(0.14, 0.14)
+texture = ExtResource("1_u7sid")

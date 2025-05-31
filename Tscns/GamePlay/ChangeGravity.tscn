@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://olsao2nnfmw1"]
+
+[ext_resource type="Script" uid="uid://bl8kyaluvw30c" path="res://Scripts/GamePlay/ChangeGravity.cs" id="1_apwmx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wk4k7"]
+size = Vector2(40, 40)
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_wk4k7"]
+particle_flag_disable_z = true
+emission_shape_offset = Vector3(20, 40, 0)
+emission_shape = 3
+emission_box_extents = Vector3(20, 1, 1)
+gravity = Vector3(0, -98, 0)
+
+[node name="ChangeGravity" type="Area2D"]
+script = ExtResource("1_apwmx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(20, 20)
+shape = SubResource("RectangleShape2D_wk4k7")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+modulate = Color(1, 1, 1, 0.247059)
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+process_material = SubResource("ParticleProcessMaterial_wk4k7")

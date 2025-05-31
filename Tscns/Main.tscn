@@ -1,0 +1,25 @@
+[gd_scene load_steps=6 format=3 uid="uid://do50xqp2jb8el"]
+
+[ext_resource type="PackedScene" uid="uid://mf7lse0jms7j" path="res://Tscns/UI/MainUI.tscn" id="1_ojdui"]
+[ext_resource type="PackedScene" uid="uid://dt3ufad46t4vw" path="res://Tscns/3D/MainInterface.tscn" id="2_4m062"]
+[ext_resource type="PackedScene" uid="uid://cphlq5w66kaku" path="res://Tscns/UI/SettingUI.tscn" id="2_b08ir"]
+[ext_resource type="PackedScene" uid="uid://cs5u6ihcahqod" path="res://Tscns/UI/SelectUI.tscn" id="3_rhvyd"]
+[ext_resource type="AudioStream" uid="uid://b628p5s0mxr8w" path="res://Assets/Music/mus_epilogue_loop.ogg" id="4_7l80i"]
+
+[node name="Main" type="Node2D"]
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="MainUI" parent="UI" instance=ExtResource("1_ojdui")]
+
+[node name="SettingUI" parent="UI" instance=ExtResource("2_b08ir")]
+
+[node name="SelectUI" parent="UI" instance=ExtResource("3_rhvyd")]
+
+[node name="MainInterface" parent="." instance=ExtResource("2_4m062")]
+
+[node name="mus_epilogue_loop" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_7l80i")
+autoplay = true
+bus = &"Music"
+parameters/looping = true
